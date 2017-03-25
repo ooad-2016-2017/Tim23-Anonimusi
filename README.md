@@ -1,12 +1,12 @@
 # Tim23-Anonimusi
-#Naziv tima: Anonimusi
-#Tema : Kino
-##Clanovi :
+# Naziv tima: Anonimusi
+# Tema : Kino
+## Clanovi :
 1. Melika Sisic
 2. Raisa Seferagic
 3. Amar Spahic
 
-##Opis Teme :
+## Opis Teme :
 Sistem omogućava vođenje evidencije i pregled filmova (sa opštim karakteistikama filma, kao što su
  nazivi glumaca, godina itd.) koji se prikazuju u kinu, te prodaju ulaznica za date filmove. Sistem je 
  namijenjen za upotrebu više kina jedne grupacije, a korisnici koji koriste aplikaciju za kupovinu ulaznica 
@@ -19,7 +19,7 @@ Sistem omogućava vođenje evidencije i pregled filmova (sa opštim karakteistik
  svakog ljubitelja filmova. Svakih 7 dana se mijenjaju termini projekcija i dodaju se nove projekcije, 
  a one najstarije prestaju s projekcijom (brišu se iz sistema).
  
- ##Procesi :
+ ## Procesi :
  **pregled filmova -** Korisnik sistema (preko odgovarajuće forme) bira grad u kojem se nalazi, 
  nakon čega mu se prikazuje lista kina koje se nalaze u tom gradu (zajedno sa mapom izabranog grada). 
  Nakon što je korisnik odabrao željenu lokaciju kina, prikazuje mu se spisak svih projekcija koje 
@@ -76,7 +76,7 @@ te im se dodjeljuje članska kartica sa jedinstvenom šifrom, pomoću koje mogu 
 popusta od 10% za svaku projekciju. Uvažavajući preference naših kupaca, bit će im ponuđeno, 
 nakon transakcije od 30KM ili više, da se samovoljno izraze da li žele biti članovi našeg kina ili ne.
 
-##Funkcionalnosti :
+## Funkcionalnosti :
 *	dodavanje i brisanje zaposlenih
 *	dodavanje filmova
 *	dodavanje projekcija
@@ -92,7 +92,7 @@ nakon transakcije od 30KM ili više, da se samovoljno izraze da li žele biti č
 *	prikaz svih filmova koji se prikazuju u kinu narednih mjesec dana
 *	mogućnost pretraživanja trenutnih i skorih projekcija
 
-##Akteri :
+## Akteri :
 
 **Korisnici sistema -** korisnici sistema su osobe koje kupuju ulaznice za filmove preko interneta ili direkntno na kasi kina
 
