@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="App1.PregledFilmova"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0.991"/>
+                    <GradientStop Color="#FF06082C"/>
+                    <GradientStop Color="#FF9CE1F6" Offset="0.745"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Image x:Name="image" HorizontalAlignment="Center" Height="100" Margin="95,5,95,0" VerticalAlignment="Top" Source="logo.jpg" Width="170" Stretch="Fill"/>
+            <TextBlock Text="Pregled filmova" Foreground="White" FontWeight="Bold" Grid.Row="0" FontSize="16px" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10,0,10,508" />
+            <TextBlock VerticalAlignment="Center" Margin="10,169.024,0,450.976">
+                <Run Text="Odaberite "/>
+                <Run Text="Film"/>
+                <Run Text=": "/>
+            </TextBlock>
+            <ListView x:Name="listView" HorizontalAlignment="Left" Height="235" Margin="95,229,0,0" VerticalAlignment="Top" Width="170" Foreground="#FFFAF5F5" SelectionChanged="listView_SelectionChanged" Background="White"/>
+            <Button Content="Potvrdi" x:Name="Ptvrdi" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Margin="90,518,90,90" />
+
+        </Grid>
+
+    </Grid>
+</Page>
