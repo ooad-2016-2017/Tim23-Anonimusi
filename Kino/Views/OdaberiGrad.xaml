@@ -14,8 +14,8 @@
                 <GradientStop Color=" #FF9FE5F9" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Image HorizontalAlignment="Left" Height="130" Margin="50,120,0,0" VerticalAlignment="Top" Width="245" Stretch="Fill" Source="Assets/cineramaLogo.png"/>
-        <RelativePanel HorizontalAlignment="Left" BorderBrush="#FFCF3103" BorderThickness="1,1,1,1" Height="280" Margin="10,280,0,0" VerticalAlignment="Top" Width="335">
+        <Image HorizontalAlignment="Left" Height="130" Margin="49,42,0,0" VerticalAlignment="Top" Width="245" Stretch="Fill" Source="Assets/cineramaLogo.png" RenderTransformOrigin="0.501,-0.021"/>
+        <RelativePanel HorizontalAlignment="Left" BorderBrush="#FFCF3103" BorderThickness="1,1,1,1" Height="342" Margin="10,218,0,0" VerticalAlignment="Top" Width="335">
 
 
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Odaberite grad u kojem želite pogledati film:" VerticalAlignment="Top" Margin="30,5,0,0" TextAlignment="Center" FontSize="20" FontStyle="Normal" FontFamily="Script MT Bold" Foreground="#FFCF3103"/>
@@ -24,8 +24,8 @@
             <Button Content="Nazad" BorderBrush="#FFCF3103" Foreground="#FFCF3103" Background="#FFE4ECF9" HorizontalAlignment="Left" Margin="20,190,0,0" VerticalAlignment="Top" Width="130" Height="35"/>
             <Button Content="OK" BorderBrush="#FFCF3103" Background="#FFE4ECF9" Foreground="#FFCF3103" HorizontalAlignment="Left" Margin="190,190,10,0" VerticalAlignment="Top" Width="130" Height="35"/>
         </RelativePanel>
-       
-        <TextBlock HorizontalAlignment="Left"  FontSize="60"  Height="50" TextWrapping="Wrap" Text="Bring yo mama to... " VerticalAlignment="Top" Margin="40,50,0,0" Foreground="#FFE21818" FontFamily="Palace Script MT"/>
+
+
 
 
     </Grid>

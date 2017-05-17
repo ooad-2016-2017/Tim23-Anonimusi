@@ -15,7 +15,7 @@
                 <GradientStop Color=" #FF9FE5F9" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Image HorizontalAlignment="Left" Height="100" Margin="60,80,0,0" VerticalAlignment="Top" Width="235" Stretch="Fill" Source="Assets/cineramaLogo.png"/>
+        <Image HorizontalAlignment="Left" Height="133" Margin="58,10,0,0" VerticalAlignment="Top" Width="235" Stretch="Fill" Source="Assets/cineramaLogo.png"/>
         <RelativePanel HorizontalAlignment="Left" BorderBrush="#FFCF3103" BorderThickness="3,3,3,3" Height="390" Margin="10,190,0,0" VerticalAlignment="Top" Width="335">
 
 
@@ -26,7 +26,7 @@
         </RelativePanel>
         <Button Content="Nazad" BorderBrush="#FFCF3103" Foreground="#FFCF3103" Background="#FFE4ECF9" HorizontalAlignment="Left" Margin="20,590,0,0" VerticalAlignment="Top" Width="140" Height="35"/>
         <Button Content="OK" BorderBrush="#FFCF3103" Background="#FFE4ECF9" Foreground="#FFCF3103" HorizontalAlignment="Left" Margin="190,590,0,0" VerticalAlignment="Top" Width="140" Height="35"/>
-        <TextBlock HorizontalAlignment="Left" FontSize="60"  Height="50" TextWrapping="Wrap" Text="Bring yo mama to... " VerticalAlignment="Top" Margin="40,20,0,0" Foreground="#FFE21818" FontFamily="Palace Script MT"/>
+
 
 
     </Grid>

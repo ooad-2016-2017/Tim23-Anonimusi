@@ -16,7 +16,7 @@
                 <GradientStop Color=" #FF9FE5F9" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Image HorizontalAlignment="Left" Height="100" Margin="60,65,0,0" VerticalAlignment="Top" Width="235" Stretch="Fill" Source="Assets/cineramaLogo.png"/>
+        <Image HorizontalAlignment="Left" Height="120" Margin="60,25,0,0" VerticalAlignment="Top" Width="235" Stretch="Fill" Source="Assets/cineramaLogo.png"/>
         <RelativePanel HorizontalAlignment="Left" BorderBrush="#FFCF3103" BorderThickness="2,2,2,2" Height="160" Margin="10,172,0,0" VerticalAlignment="Top" Width="335">
 
 
@@ -54,7 +54,7 @@
         </RelativePanel>
         <Button Content="Nazad" BorderBrush="#FFCF3103" Foreground="#FFCF3103" Background="#FFE4ECF9" HorizontalAlignment="Left" Margin="10,585,0,0" VerticalAlignment="Top" Width="143" Height="30"/>
         <Button Content="Potvrdi rezervaciju" BorderBrush="#FFCF3103" Background="#FFE4ECF9" Foreground="#FFCF3103" HorizontalAlignment="Left" Margin="200,585,10,0" VerticalAlignment="Top" Width="143" Height="30"/>
-        <TextBlock HorizontalAlignment="Left" FontSize="60"  Height="50" TextWrapping="Wrap" Text="Bring yo mama to... " VerticalAlignment="Top" Margin="40,10,0,0" Foreground="#FFE21818" FontFamily="Palace Script MT"/>
+       
 
 
     </Grid>

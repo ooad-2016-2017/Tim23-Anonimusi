@@ -32,7 +32,7 @@
             
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Unesite podatke o novom uposleniku ispod. Sva polja su obavezna:" VerticalAlignment="Top" Margin="20,205,0,0" FontSize="14" FontStyle="Italic" FontFamily="Script MT Bold" Foreground="#FFCF3103"/>
             <PasswordBox HorizontalAlignment="Left" Height="20"  VerticalAlignment="Top" Width="160" Margin="155,410,0,-190" InputScope="Password" Password="" PlaceholderText=""/>
-            <PasswordBox HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="64"/>
+            
         </RelativePanel>
         <Button Content="Nazad" HorizontalAlignment="Left" Margin="20,590,0,0" VerticalAlignment="Top" Width="140" Height="30"/>
         <Button Content="Unesi" HorizontalAlignment="Left" Margin="190,590,0,0" VerticalAlignment="Top" Width="140" Height="30"/>

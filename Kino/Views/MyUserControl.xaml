@@ -17,7 +17,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Image HorizontalAlignment="Left" Height="160" Margin="50,101,0,0" VerticalAlignment="Top" Width="298" Source="Assets/cineramaLogo.png" Stretch="Fill"/>
-        <TextBlock HorizontalAlignment="Left" FontSize="60" Margin="50,20,0,0" TextWrapping="Wrap" Text="Bring yo mama to..." VerticalAlignment="Top" Foreground="#FFDA3E11" FontFamily="Palace Script MT"/>
+        
 
     </Grid>
 </UserControl>

@@ -9,15 +9,15 @@
 
     <Grid x:Name="PregledProjekcija" AutomationProperties.Name="Odaberite projekciju">
         <Grid.Background>
-            
+
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="#FF06082C"/>
-                
+
                 <GradientStop Color=" #FF9FE5F9" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Image HorizontalAlignment="Left" Height="100" Margin="60,80,0,0" VerticalAlignment="Top" Width="235" Stretch="Fill" Source="Assets/cineramaLogo.png"/>
-        <RelativePanel HorizontalAlignment="Left" BorderBrush="#FFCF3103" BorderThickness="3,3,3,3" Height="180" Margin="10,190,0,0" VerticalAlignment="Top" Width="335">
+        <Image HorizontalAlignment="Left" Height="128" Margin="60,10,0,0" VerticalAlignment="Top" Width="235" Stretch="Fill" Source="Assets/cineramaLogo.png"/>
+        <RelativePanel HorizontalAlignment="Left" BorderBrush="#FFCF3103" BorderThickness="3,3,3,3" Height="192" Margin="10,178,0,0" VerticalAlignment="Top" Width="335">
 
 
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Odaberite film koji želite pogledati:" VerticalAlignment="Top" Margin="5,5,0,0" TextAlignment="Center" FontSize="20" Width="320" FontStyle="Normal" FontFamily="Script MT Bold" Foreground="#FFCF3103"/>
@@ -32,15 +32,15 @@
 
 
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Prikaz liste filmova prema odgovarajućem kriteriju: (Izaberite jednu projekciju) " VerticalAlignment="Top" Margin="5,5,0,0" TextAlignment="Center" FontSize="20" Width="320" FontStyle="Normal" FontFamily="Script MT Bold" Foreground="#FFCF3103"/>
-            
+
             <ComboBox HorizontalAlignment="Left" Background="White" Foreground="DarkBlue" Height="30" VerticalAlignment="Top" Width="250" Margin="25,100,10,10">
                 <ListView Height="100" Width="100"/>
             </ComboBox>
             <Button Content="Nazad" BorderBrush="#FFCF3103" Foreground="#FFCF3103" Background="#FFE4ECF9" HorizontalAlignment="Left" Margin="20,200,0,0" VerticalAlignment="Top" Width="135" Height="30"/>
             <Button Content="OK" BorderBrush="#FFCF3103" Background="#FFE4ECF9" Foreground="#FFCF3103" HorizontalAlignment="Left" Margin="170,200,0,0" VerticalAlignment="Top" Width="135" Height="30"/>
         </RelativePanel>
-       
-        <TextBlock HorizontalAlignment="Left" FontSize="60"  Height="50" TextWrapping="Wrap" Text="Bring yo mama to... " VerticalAlignment="Top" Margin="40,20,0,0" Foreground="#FFE21818" FontFamily="Palace Script MT"/>
+
+
 
 
     </Grid>
