@@ -21,12 +21,12 @@ namespace Projekat.Kino.Views
         }
         public Film getSelected()
         {
-            return (Film) listaFilmova.SelectedItem;
+            return (Film) listaFilmova.SelectedValue;
         }
         public void detalji_Click(object sender, RoutedEventArgs e)
         {
             var rootFrame = Window.Current.Content as Frame;
-            rootFrame.Navigate(typeof(DetaljiFilma));
+            rootFrame.Navigate(typeof(DetaljiFilma), getSelected() );
         }
         public void obrisi_Click(object sender, RoutedEventArgs e)
         {

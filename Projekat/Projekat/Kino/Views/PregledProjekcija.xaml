@@ -28,7 +28,7 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Vertical" >
-                        <TextBlock x:Name="filmNaziv"  Foreground="DarkSlateBlue" FontWeight="Bold" Margin="5,0,0,0"/>
+                        <TextBox x:Name="filmNaziv" Background="Transparent"  Foreground="DarkSlateBlue" FontWeight="Bold" Margin="5,0,0,0"/>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Prvi dan projekcije: "></TextBlock>
                             <TextBlock x:Name="pocetak" />
