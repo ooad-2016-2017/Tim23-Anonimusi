@@ -28,13 +28,13 @@
                     <DataTemplate>
                         <StackPanel Orientation="Vertical" >
                             <TextBlock Text="{Binding naziv}" Foreground="DarkSlateBlue" FontWeight="Bold" Margin="5,0,0,0"/>
-            <TextBlock Text="{Binding godina}" Foreground="DarkSlateBlue" FontStyle="Italic" Margin="5,0,0,0" />
-            <TextBlock Text="{Binding zanr}" Foreground="DarkSlateBlue"/>
-            <TextBlock Text="{Binding trajanje}"  Foreground="DarkSlateBlue"/>
-            <TextBlock Text="{Binding plot}"  Foreground="DarkSlateBlue"/>
-            <HyperlinkButton Content="{Binding imdb}" Foreground="Blue" />
-                </StackPanel>
-                </DataTemplate>
+                            <TextBlock Text="{Binding godina}" Foreground="DarkSlateBlue" FontStyle="Italic" Margin="5,0,0,0" />
+                            <TextBlock Text="{Binding zanr}" Foreground="DarkSlateBlue"/>
+                            <TextBlock Text="{Binding trajanje}"  Foreground="DarkSlateBlue"/>
+                            <TextBlock Text="{Binding plot}"  Foreground="DarkSlateBlue"/>
+                            <HyperlinkButton Content="{Binding imdb}" Foreground="Blue" />
+                        </StackPanel>
+                    </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
         </Grid>

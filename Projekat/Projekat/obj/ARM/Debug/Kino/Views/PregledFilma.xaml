@@ -35,7 +35,9 @@
             
             
             <Button x:ConnectionId='3' Content="Vidi detalje"                       Grid.Row="2" x:Name="pregled" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="-180,0,0,0" />
-            <Button x:ConnectionId='4' Content="Novi film"                    Grid.Row="2" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="180,0,0,0" />
+            <Button x:ConnectionId='4' Content="Obriši"                      Grid.Row="2" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="180,0,0,0" />
+            <Button Content="Dodaj projekciju"  Grid.Row="2" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="-180,100,0,0" />
+            <Button x:ConnectionId='5' Content="Novi film"                    Grid.Row="2" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="180,100,0,0" />
 
         </Grid>
 

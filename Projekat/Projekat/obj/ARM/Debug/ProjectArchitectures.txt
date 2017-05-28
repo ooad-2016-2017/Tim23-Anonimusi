@@ -1,1 +1,1 @@
-C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\Projekat.csproj;arm
+C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Projekat.csproj;arm

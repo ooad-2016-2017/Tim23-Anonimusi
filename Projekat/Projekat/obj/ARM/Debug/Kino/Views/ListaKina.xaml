@@ -22,7 +22,22 @@
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Sva kina:" FontSize="20px" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="-220, 10, 0, 20" Grid.Row="0" VerticalAlignment="Bottom" />
-        <ListBox x:ConnectionId='1' x:Name="listaKina" Background="#FF9FE5F9" Grid.Row="1" HorizontalAlignment="Center"  VerticalAlignment="Stretch" Margin="10,20,0,0" Width="271" BorderBrush="#FF462066"></ListBox>
+        <ListView x:ConnectionId='1' x:Name="listaKina" Background="#FF9FE5F9" Grid.Row="1" HorizontalAlignment="Center"  VerticalAlignment="Stretch" Margin="10,20,0,0" Width="271" BorderBrush="#FF462066">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                <StackPanel Orientation="Vertical" >
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Kino: " Margin="5,0,0,0"></TextBlock>
+                            <TextBlock Text="{Binding kinoId}" Foreground="DarkSlateBlue" FontWeight="Bold" Margin="5,0,0,0"/>
+                        </StackPanel>
+                        <TextBlock Text="{Binding adresa}" Foreground="DarkSlateBlue" Margin="5,0,0,0" />
+                        <TextBlock Text="{Binding grad}" Margin="5,0,0,0"/>
+                        <TextBlock Text="{Binding email}" Margin="5,0,0,0"/>
+                        <TextBlock Text="{Binding telefon}" Margin="5,0,0,0" />
+                    </StackPanel>
+            </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>

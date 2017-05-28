@@ -142,6 +142,11 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20170528112551_InitialMigtation.cs" />
+    <Compile Include="Migrations\20170528112551_InitialMigtation.designer.cs">
+      <DependentUpon>20170528112551_InitialMigtation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\KinoDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\FourSquare.cs" />
   </ItemGroup>

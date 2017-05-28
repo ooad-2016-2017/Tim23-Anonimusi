@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>3895aa01-e9fc-46fd-a96c-14243841b75c</PackageIdentityName>
     <PackageIdentityPublisher>CN=Korisnik</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-28T01:33:12.337</Modified>
+      <Modified>2017-05-28T11:27:43.323</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\bin\x86\Debug\Projekat.exe">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Projekat.exe">
       <PackagePath>entrypoint\Projekat.exe</PackagePath>
-      <Modified>2017-05-28T01:33:11.632</Modified>
+      <Modified>2017-05-28T11:27:41.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -524,53 +524,53 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T21:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\Kino\Views\reklama.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\reklama.png">
       <PackagePath>Kino\Views\reklama.png</PackagePath>
       <Modified>2017-05-27T23:35:30.141</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-09-20T15:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T15:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T15:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T15:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T15:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T15:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T15:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\Kino\dieHard.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\dieHard.jpg">
       <PackagePath>Kino\dieHard.jpg</PackagePath>
       <Modified>2017-05-22T22:40:38.315</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\Kino\Views\logo.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\logo.jpg">
       <PackagePath>Kino\Views\logo.jpg</PackagePath>
       <Modified>2017-05-20T10:24:26.674</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-05-19T20:27:42.737</Modified>
     </AppxPackagedFile>
@@ -582,7 +582,7 @@
       <PackagePath>EntityFramework.Commands.dll</PackagePath>
       <Modified>2015-07-21T17:12:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\bin\x86\Debug\Projekat.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Projekat.xr.xml">
       <PackagePath>Projekat.xr.xml</PackagePath>
       <Modified>2017-05-28T01:24:45.593</Modified>
     </AppxPackagedFile>
@@ -590,14 +590,14 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-05-12T23:20:41.531</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-28T01:26:20.730</Modified>
+      <Modified>2017-05-28T11:27:42.775</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\documents\visual studio 2015\Projects\Projekat\Projekat\bin\x86\Debug\Core\Projekat.exe">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Core\Projekat.exe">
       <PackagePath>Projekat.exe</PackagePath>
-      <Modified>2017-05-28T01:33:12.330</Modified>
+      <Modified>2017-05-28T11:27:43.310</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
