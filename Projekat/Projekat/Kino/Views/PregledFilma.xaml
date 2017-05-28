@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="Projekat.Kino.Views.PregledFilma"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Projekat.Kino.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0.991"/>
+                    <GradientStop Color="#FF06082C"/>
+                    <GradientStop Color="#FF9CE1F6" Offset="0.745"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image x:Name="image" Grid.Row="0" HorizontalAlignment="Center" Height="100" Margin="0,5,0,0" VerticalAlignment="Top" Source="logo.jpg" Width="170" Stretch="Fill"/>
+            <TextBlock Text="Pregled filmova" Grid.Row="0" Foreground="White" FontWeight="Bold" FontSize="20px" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10,0,10,20" />
+            <ListView x:Name="listaFilmova" Grid.Row="1" Background="#FF9FE5F9" HorizontalAlignment="Center"  Margin="0,0,0,0" VerticalAlignment="Stretch" Width="270"  Foreground="#FFFAF5F5" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                        <StackPanel Orientation="Vertical" >
+                            <TextBlock Text="{Binding naziv}" Foreground="DarkSlateBlue" FontWeight="Bold" Margin="5,0,0,0"/>
+                            <TextBlock Text="{Binding godina}" Foreground="DarkSlateBlue" FontStyle="Italic" Margin="5,0,0,0" />
+                        </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            
+            
+            <Button Content="Vidi detalje" Click="detalji_Click" Grid.Row="2" x:Name="pregled" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="-180,0,0,0" />
+            <Button Content="Obriši" Click="obrisi_Click" Grid.Row="2" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="180,0,0,0" />
+            <Button Content="Dodaj projekciju"  Grid.Row="2" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="-180,100,0,0" />
+            <Button Content="Novi film" Click="novi_Click" Grid.Row="2" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="180,100,0,0" />
+
+        </Grid>
+
+    </Grid>
+</Page>

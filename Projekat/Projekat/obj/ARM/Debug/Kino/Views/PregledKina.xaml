@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="Projekat.Kino.Views.PregledKina"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Projekat.Kino.Views"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <Grid AutomationProperties.Name="Odaberite kino">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF06082C"/>
+                <GradientStop Color=" #FF9FE5F9" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Center" Grid.Row="0" Height="100" Margin="0,5,0,0" VerticalAlignment="Top" Width="170" Stretch="Fill" Source="logo.jpg"/>
+        <RelativePanel HorizontalAlignment="Left" Grid.Row="1" BorderBrush="#FFCF3103" BorderThickness="3,3,3,3" Width="330" Margin="10,20,10,0" VerticalAlignment="Stretch" >
+
+
+            <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Odaberite kino u kojem želite pogledati film:" VerticalAlignment="Top" Margin="30,5,0,0" TextAlignment="Center" FontSize="20" FontStyle="Normal" FontFamily="Script MT Bold" Foreground="#FFCF3103"/>
+            <TextBlock HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="Dostupna kina: " VerticalAlignment="Top" Width="160" Margin="20,60,0,0" Foreground="#FFCF3103" FontSize="17"/>
+            <ComboBox HorizontalAlignment="Left" Background="White" Foreground="DarkBlue" Height="30" VerticalAlignment="Top" Width="250" Margin="60,90,10,10"/>
+            <Maps:MapControl HorizontalAlignment="Left" Height="230" VerticalAlignment="Top" Width="310" Margin="15,130,15,0"/>
+        </RelativePanel>
+        <Button Grid.Row="2" Content="Nazad" BorderBrush="#FFCF3103" Foreground="#FFCF3103" Background="#FFE4ECF9" HorizontalAlignment="Center" Margin="-160,20,0,0" VerticalAlignment="Top" Width="140" Height="35"/>
+        <Button Grid.Row="2" Content="OK" BorderBrush="#FFCF3103" Background="#FFE4ECF9" Foreground="#FFCF3103" HorizontalAlignment="Center" Margin="160,20,0,0" VerticalAlignment="Top" Width="140" Height="35"/>
+
+    </Grid>
+</Page>
+

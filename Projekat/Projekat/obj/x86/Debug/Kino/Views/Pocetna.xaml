@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="Projekat.Kino.Views.Pocetna"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Projekat.Kino.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+     xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='1' x:Name="OdaberiGrad" AutomationProperties.Name="Odaberite grad">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF06082C"/>
+                <GradientStop Color=" #FF9FE5F9" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="1.4*"></RowDefinition>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="0.5" />
+        </Grid.RowDefinitions>
+        
+
+        <RelativePanel HorizontalAlignment="Stretch" Grid.Row="2" BorderBrush="#FFCF3103" BorderThickness="1,1,1,1"  Margin="10,10,10,10" VerticalAlignment="Stretch" >
+        </RelativePanel>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Odaberite grad u kojem želite pogledati film:" VerticalAlignment="Top" Margin="0,10,10,0" TextAlignment="Center" FontSize="20" FontStyle="Normal" FontFamily="Script MT Bold" Foreground="#FFCF3103"/>
+        
+        <TextBlock Grid.Row="2" HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="Gradovi: " VerticalAlignment="Top" Width="160" Margin="-100,60,0,0" Foreground="#FFCF3103" FontSize="20"/>
+        <ComboBox Grid.Row="2" HorizontalAlignment="Center" Background="White" Foreground="DarkBlue" Height="30" VerticalAlignment="Top" Width="200" Margin="0,100,10,10">
+            <ComboBoxItem Content="Sarajevo"/>
+            <ComboBoxItem Content="Mostar"/>
+            <ComboBoxItem Content="Bihać"/>
+        </ComboBox>
+        <Maps:MapControl Grid.Row="2" MapServiceToken=""  HorizontalAlignment="Center" Height="230" VerticalAlignment="Top" Width="310" Margin="15,150,15,0"/>
+        <Button Grid.Row="2" Content="Nazad" BorderBrush="#FFCF3103" Foreground="#FFCF3103" Background="#FFE4ECF9" HorizontalAlignment="Center" Margin="0,0,150,20" VerticalAlignment="Bottom" Width="130" Height="30"/>
+        <Button x:ConnectionId='2' Grid.Row="2" Content="OK"                  BorderBrush="#FFCF3103" Background="#FFE4ECF9" Foreground="#FFCF3103" HorizontalAlignment="Center" Margin="150,0,20,20" VerticalAlignment="Bottom" Width="130" Height="30"/>
+
+        <Image x:ConnectionId='3' x:Name="logo" Source="logo.jpg" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" Height="100" Width="170" Stretch="Fill" Margin="0,5,0,0" />
+
+
+    </Grid>
+</Page>
+
