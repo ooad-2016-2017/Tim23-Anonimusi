@@ -8,6 +8,8 @@ namespace Projekat.Kino.Helper
 {
     interface iNavigationService
     {
+        void Navigate(Type sourcePage);
         void Navigate(Type sourcePage, object parameter);
+        void GoBack();
     }
 }
