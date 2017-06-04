@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 569d0ad6a52d2df48ab245828ffe09ae
+timeCreated: 1496598417
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - puzzlefield: {instanceID: 0}
+  - btn: {fileID: 1610788714212560, guid: d7d0beab565d863499a438fac78f3a57, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
