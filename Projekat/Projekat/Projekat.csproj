@@ -95,24 +95,54 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Azure\Clan.cs" />
+    <Compile Include="Azure\eKupac.cs" />
+    <Compile Include="Azure\Film.cs" />
+    <Compile Include="Azure\Kino.cs" />
+    <Compile Include="Azure\Projekcija.cs" />
+    <Compile Include="Azure\Transakcija.cs" />
+    <Compile Include="Azure\Ulaznica.cs" />
+    <Compile Include="Azure\Uposleni.cs" />
     <Compile Include="Kino\Helper\iNavigationService.cs" />
+    <Compile Include="Kino\Helper\NavigationService.cs" />
+    <Compile Include="Kino\Helper\RelayCommand.cs" />
+    <Compile Include="Kino\Models\Clan.cs" />
     <Compile Include="Kino\Models\DefaultVrijednostiFilm.cs" />
     <Compile Include="Kino\Models\DefaultVrijednostiKino.cs" />
     <Compile Include="Kino\Models\DefaultVrijednostiProjekcija.cs" />
+    <Compile Include="Kino\Models\DefaultVrijednostiUposleni.cs" />
+    <Compile Include="Kino\Models\eKupac.cs" />
     <Compile Include="Kino\Models\Film.cs" />
     <Compile Include="Kino\Models\Kino.cs" />
     <Compile Include="Kino\Models\KinoDbContext.cs" />
     <Compile Include="Kino\Models\Projekcija.cs" />
     <Compile Include="Kino\Models\Sistem.cs" />
+    <Compile Include="Kino\Models\Transakcija.cs" />
+    <Compile Include="Kino\Models\Ulaznica.cs" />
+    <Compile Include="Kino\Models\Uposleni.cs" />
+    <Compile Include="Kino\ViewModels\ComboBoxItemConvert.cs" />
+    <Compile Include="Kino\ViewModels\CommandHandler.cs" />
     <Compile Include="Kino\ViewModels\SistemVM.cs" />
     <Compile Include="Kino\Views\AdminMeni.xaml.cs">
       <DependentUpon>AdminMeni.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Kino\Views\BrisanjeUposlenog.xaml.cs">
+      <DependentUpon>BrisanjeUposlenog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Kino\Views\DetaljiFilma.xaml.cs">
       <DependentUpon>DetaljiFilma.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Kino\Views\IzaberiGrad.xaml.cs">
+      <DependentUpon>IzaberiGrad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kino\Views\IzaberiProjekciju.xaml.cs">
+      <DependentUpon>IzaberiProjekciju.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Kino\Views\ListaKina.xaml.cs">
       <DependentUpon>ListaKina.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kino\Views\NoviClan.xaml.cs">
+      <DependentUpon>NoviClan.xaml</DependentUpon>
     </Compile>
     <Compile Include="Kino\Views\NoviFilm.xaml.cs">
       <DependentUpon>NoviFilm.xaml</DependentUpon>
@@ -130,11 +160,17 @@
     <Compile Include="Kino\Views\PregledProjekcija.xaml.cs">
       <DependentUpon>PregledProjekcija.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Kino\Views\PreuzimanjeUlaznica.xaml.cs">
+      <DependentUpon>PreuzimanjeUlaznica.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Kino\Views\Prijava.xaml.cs">
       <DependentUpon>Prijava.xaml</DependentUpon>
     </Compile>
     <Compile Include="Kino\Views\PrvaStranica.xaml.cs">
       <DependentUpon>PrvaStranica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kino\Views\UnosUposlenog.xaml.cs">
+      <DependentUpon>UnosUposlenog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Kino\Views\UrediKino.xaml.cs">
       <DependentUpon>UrediKino.xaml</DependentUpon>
@@ -157,17 +193,18 @@
     <None Include="Projekat_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Kino\Views\Assets\logo.jpg" />
+    <Content Include="Kino\Views\Assets\pirati.jpg" />
     <Content Include="Kino\Views\reklama.png" />
     <Content Include="Kino\dieHard.jpg" />
-    <Content Include="Kino\Views\logo.jpg" />
     <Content Include="Properties\Default.rd.xml" />
-    <Content Include="Assets\LockScreenLogo.scale-200.png" />
-    <Content Include="Assets\SplashScreen.scale-200.png" />
-    <Content Include="Assets\Square150x150Logo.scale-200.png" />
-    <Content Include="Assets\Square44x44Logo.scale-200.png" />
-    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
-    <Content Include="Assets\StoreLogo.png" />
-    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Kino\Views\Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Kino\Views\Assets\SplashScreen.scale-200.png" />
+    <Content Include="Kino\Views\Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Kino\Views\Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Kino\Views\Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Kino\Views\Assets\StoreLogo.png" />
+    <Content Include="Kino\Views\Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -178,11 +215,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Kino\Views\BrisanjeUposlenog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Kino\Views\DetaljiFilma.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Kino\Views\IzaberiGrad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kino\Views\IzaberiProjekciju.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Kino\Views\ListaKina.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kino\Views\NoviClan.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -210,11 +263,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Kino\Views\PreuzimanjeUlaznica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Kino\Views\Prijava.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Kino\Views\PrvaStranica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kino\Views\UnosUposlenog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

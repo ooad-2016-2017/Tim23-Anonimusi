@@ -12,6 +12,8 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Core;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
 
 namespace Projekat.Kino.Views
 {

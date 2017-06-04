@@ -70,6 +70,29 @@ namespace ProjekatMigrations
 
                     b.Key("projekcijaId");
                 });
+            builder.Entity("Projekat.Kino.Models.Uposleni", b =>
+            {
+                b.Property<int>("UposleniId")
+                    .ValueGeneratedOnAdd();
+
+                b.Property<string>("FourSqaureId");
+
+                b.Property<string>("Ime");
+
+                b.Property<string>("KorisnickoIme");
+
+                b.Property<string>("MaticniBroj");
+
+                b.Property<string>("Prezime");
+
+                b.Property<string>("Sifra");
+
+                b.Property<byte[]>("Slika")
+                    .Annotation("Relational:ColumnType", "image");
+
+                b.Key("UposleniId");
+            });
+
         }
     }
 }

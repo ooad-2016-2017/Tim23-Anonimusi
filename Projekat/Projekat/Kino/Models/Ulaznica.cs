@@ -18,6 +18,7 @@ namespace Projekat.Kino.Models
         private DateTime pocetakFilma;
         private DateTime krajFilma;
         private string sifraRezervacije;
+        private bool iskoristena = false;
 
         public int Id
         {
@@ -114,6 +115,18 @@ namespace Projekat.Kino.Models
             {
                 sifraRezervacije = value;
             }
+        }
+        public bool Iskoristena
+        {
+            get
+            {
+                return iskoristena;
+            }
+            set
+            {
+                iskoristena = value;
+            }
+
         }
     }
 }

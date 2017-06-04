@@ -57,6 +57,24 @@ namespace ProjekatMigrations
                 {
                     table.PrimaryKey("PK_Projekcija", x => x.projekcijaId);
                 });
+            migration.CreateTable(
+               name: "Uposleni",
+               columns: table => new
+               {
+                   UposleniId = table.Column(type: "INTEGER", nullable: false),
+                    //.Annotation(SQLite:Autoincrement",true),
+                    FourSqaureId = table.Column(type: "TEXT", nullable: true),
+                   Ime = table.Column(type: "TEXT", nullable: true),
+                   KorisnickoIme = table.Column(type: "TEXT", nullable: true),
+                   MaticniBroj = table.Column(type: "TEXT", nullable: true),
+                   Prezime = table.Column(type: "TEXT", nullable: true),
+                   Sifra = table.Column(type: "TEXT", nullable: true),
+                   Slika = table.Column(type: "image", nullable: true)
+               },
+               constraints: table =>
+               {
+                   table.PrimaryKey("PK_Uposleni", x => x.UposleniId);
+               });
         }
 
         public override void Down(MigrationBuilder migration)

@@ -11,6 +11,12 @@ namespace Projekat.Kino.Models
     {
         String adminName { get; set; }
         String adminLozinka { get; set; }
+        public List<Kino> kina { get; set; }
+        public List<Film> filmovi { get; set; }
+        public List<Projekcija> projekcije { get; set; }
+        public List<Uposleni> uposleni { get; set; }
+        public List<Ulaznica> ulaznice { get; set; }
+        public List<Clan> clanovi { get; set; }
 
         public Sistem()
         {

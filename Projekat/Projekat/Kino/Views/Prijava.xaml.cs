@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
 
 namespace Projekat.Kino.Views
 {

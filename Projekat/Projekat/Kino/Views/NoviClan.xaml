@@ -14,7 +14,7 @@
                 <GradientStop Color=" #FF9FE5F9" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Image HorizontalAlignment="Left" Height="100" Margin="60,10,0,0" VerticalAlignment="Top" Width="235" Stretch="Fill" Source="Assets/cineramaLogo.png">
+        <Image HorizontalAlignment="Left" Height="100" Margin="60,10,0,0" VerticalAlignment="Top" Width="235" Stretch="Fill" Source="Assets/logo.jpg">
 
         </Image>
         <RelativePanel HorizontalAlignment="Left" BorderBrush ="#FF06082C" Height="169" Margin="10,115,0,0" VerticalAlignment="Top" Width="335" BorderThickness="2,2,2,2" Padding="2,2,2,2">

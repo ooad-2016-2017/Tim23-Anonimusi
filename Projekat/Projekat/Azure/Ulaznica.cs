@@ -50,5 +50,10 @@ namespace Projekat.Azure
             set;
         }
 
+        public bool iskoristena
+        {
+            get;
+            set;
+        }
     }
 }

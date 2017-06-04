@@ -14,7 +14,7 @@
                 <GradientStop Color=" #FF9FE5F9" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Image HorizontalAlignment="Left" Height="100" Margin="60,10,0,0" VerticalAlignment="Top" Width="235" Stretch="Fill" Source="Assets/cineramaLogo.png">
+        <Image HorizontalAlignment="Left" Height="100" Margin="60,10,0,0" VerticalAlignment="Top" Width="235" Stretch="Fill" Source="Assets/logo.jpg">
 
         </Image>
         <Button Content="Nazad" HorizontalAlignment="Left" Margin="20,590,0,0" VerticalAlignment="Top" Width="140" Height="30"/>

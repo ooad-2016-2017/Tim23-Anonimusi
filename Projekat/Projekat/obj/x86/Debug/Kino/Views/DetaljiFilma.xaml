@@ -21,7 +21,7 @@
                 <RowDefinition Height="2*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
-            <Image x:ConnectionId='1' x:Name="image" Grid.Row="0" HorizontalAlignment="Center" Height="100" Margin="0,5,0,0" VerticalAlignment="Top" Source="logo.jpg" Width="170" Stretch="Fill"/>
+            <Image x:ConnectionId='1' x:Name="image" Grid.Row="0" HorizontalAlignment="Center" Height="100" Margin="0,5,0,0" VerticalAlignment="Top" Source="Assets/logo.jpg" Width="170" Stretch="Fill"/>
         <Grid Grid.Row="1">
             <ListView x:ConnectionId='3' x:Name="detalji" Background="Transparent">
                 <ListView.ItemTemplate>

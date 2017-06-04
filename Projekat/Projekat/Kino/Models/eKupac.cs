@@ -9,26 +9,14 @@ namespace Projekat.Kino.Models
 {
     class eKupac
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        private int id;
+            
         private string ime;
         private string prezime;
         private string email;
         private string brojKartice;
         private string sifraRezervacije;
+        public List<Ulaznica> ulaznice { get; set; }
 
-        public int Id
-        {
-            get
-            {
-                return id;
-            }
-
-            set
-            {
-                id = value;
-            }
-        }
         public string Ime
         {
             get
