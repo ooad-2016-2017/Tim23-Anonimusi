@@ -30,8 +30,7 @@
             <ComboBox HorizontalAlignment="Left" Background="White" Foreground="DarkBlue" Height="30" VerticalAlignment="Top" Width="250" Margin="60,90,10,10"/>
             <Maps:MapControl HorizontalAlignment="Left" Height="230" VerticalAlignment="Top" Width="310" Margin="15,130,15,0"/>
         </RelativePanel>
-        <Button Grid.Row="2" Content="Nazad" BorderBrush="#FFCF3103" Foreground="#FFCF3103" Background="#FFE4ECF9" HorizontalAlignment="Center" Margin="-160,20,0,0" VerticalAlignment="Top" Width="140" Height="35"/>
-        <Button Grid.Row="2" Content="OK" BorderBrush="#FFCF3103" Background="#FFE4ECF9" Foreground="#FFCF3103" HorizontalAlignment="Center" Margin="160,20,0,0" VerticalAlignment="Top" Width="140" Height="35"/>
+        <Button Grid.Row="2" Content="OK" BorderBrush="#FFCF3103" Background="#FFE4ECF9" Foreground="#FFCF3103" HorizontalAlignment="Center" Margin="0,20,0,0" Click="ok_Click" VerticalAlignment="Top" Width="140" Height="35"/>
 
     </Grid>
 </Page>

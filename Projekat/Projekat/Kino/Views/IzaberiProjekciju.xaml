@@ -16,8 +16,20 @@
                 <GradientStop Color=" #FF9FE5F9" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Image HorizontalAlignment="Left" Height="128" Margin="60,10,0,0" VerticalAlignment="Top" Width="235" Stretch="Fill" Source="Assets/logo.jpg"/>
-        <RelativePanel HorizontalAlignment="Left" BorderBrush="#FFCF3103" BorderThickness="3,3,3,3" Height="192" Margin="10,178,0,0" VerticalAlignment="Top" Width="335">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="image" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="1"  Source="logo.jpg" Margin="0,5,0,0" VerticalAlignment="Stretch" />
+        </Grid>
+        <RelativePanel Grid.Row="1" HorizontalAlignment="Center" BorderBrush="#FFCF3103" BorderThickness="3,3,3,3" Height="192" Margin="10,10,0,0" VerticalAlignment="Top" Width="335">
 
 
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Odaberite film koji želite pogledati:" VerticalAlignment="Top" Margin="5,5,0,0" TextAlignment="Center" FontSize="20" Width="320" FontStyle="Normal" FontFamily="Script MT Bold" Foreground="#FFCF3103"/>
@@ -25,19 +37,19 @@
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text=" 2.Izberite vrijeme:" VerticalAlignment="Top" Margin="160,45,0,0" FontSize="18" Width="170" FontStyle="Normal" FontFamily="Script MT Bold" Foreground="#FFCF3103"/>
             <ComboBox HorizontalAlignment="Left" Background="White" Foreground="DarkBlue" Height="30" VerticalAlignment="Top" Width="145" Margin="170,72,10,10"/>
             <ComboBox HorizontalAlignment="Left" Background="White" Foreground="DarkBlue" Height="30" VerticalAlignment="Top" Width="130" Margin="15,72,10,10"/>
-            <Button Content="Nazad" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="120" Margin="20,120,0,0" Foreground="#FFCF3103" BorderBrush="#FFCF3103" Background="LightGray"/>
-            <Button Content="Traži film" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="120" Margin="180,120,0,0" Foreground="#FFCF3103" BorderBrush="#FFCF3103" Background="LightGray"/>
+            
+            <Button Content="Traži film" HorizontalAlignment="Center" Height="32" VerticalAlignment="Top" Width="120" Margin="100,120,0,0" Foreground="#FFCF3103" BorderBrush="#FFCF3103" Background="LightGray"/>
         </RelativePanel>
-        <RelativePanel HorizontalAlignment="Left" BorderBrush="#FFCF3103" BorderThickness="3,3,3,3" Height="250" Margin="10,369,0,0" VerticalAlignment="Top" Width="335">
+        <RelativePanel Grid.Row="2" HorizontalAlignment="Center" BorderBrush="#FFCF3103" BorderThickness="3,3,3,3" Margin="10,0,10,10" VerticalAlignment="Stretch" Width="335">
 
 
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Prikaz liste filmova prema odgovarajućem kriteriju: (Izaberite jednu projekciju) " VerticalAlignment="Top" Margin="5,5,0,0" TextAlignment="Center" FontSize="20" Width="320" FontStyle="Normal" FontFamily="Script MT Bold" Foreground="#FFCF3103"/>
 
             <ComboBox HorizontalAlignment="Left" Background="White" Foreground="DarkBlue" Height="30" VerticalAlignment="Top" Width="250" Margin="25,100,10,10">
-                <ListView Height="100" Width="100"/>
+                <ListView Height="Auto" Width="100"/>
             </ComboBox>
-            <Button Content="Nazad" BorderBrush="#FFCF3103" Foreground="#FFCF3103" Background="#FFE4ECF9" HorizontalAlignment="Left" Margin="20,200,0,0" VerticalAlignment="Top" Width="135" Height="30"/>
-            <Button Content="OK" BorderBrush="#FFCF3103" Background="#FFE4ECF9" Foreground="#FFCF3103" HorizontalAlignment="Left" Margin="170,200,0,0" VerticalAlignment="Top" Width="135" Height="30"/>
+           
+            <Button Content="OK" Click="ok_Click" BorderBrush="#FFCF3103" Background="#FFE4ECF9" Foreground="#FFCF3103" HorizontalAlignment="Center" Margin="100,180,0,0" VerticalAlignment="Top" Width="135" Height="30"/>
         </RelativePanel>
 
 

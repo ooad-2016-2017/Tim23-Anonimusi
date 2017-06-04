@@ -18,7 +18,11 @@ namespace Projekat.Kino.Views
             this.InitializeComponent();
            
         }
-        
+        public void dodaj_Click(object sender, RoutedEventArgs e)
+        {
+            var rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(DodavanjeProjekcije1));
+        }
         public void detalji_Click(object sender, RoutedEventArgs e)
         {
             var rootFrame = Window.Current.Content as Frame;

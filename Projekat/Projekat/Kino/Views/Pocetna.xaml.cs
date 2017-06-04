@@ -91,8 +91,10 @@ namespace Projekat.Kino.Views
 
         public void ok_Click(object sender, RoutedEventArgs e)
         {
-
-        }
+            
+            var rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(IzaberiProjekciju));
+    }
     }
 }
 

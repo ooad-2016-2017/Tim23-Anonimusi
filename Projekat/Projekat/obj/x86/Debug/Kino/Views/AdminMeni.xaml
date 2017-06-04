@@ -29,7 +29,7 @@
         </Grid.RowDefinitions>
         <TextBlock Text="Dobrodošli!" FontSize="22px" FontWeight="Bold" Foreground="White" Grid.Row="1" VerticalAlignment="Bottom" Margin="20,0,10,20" />
         <TextBlock Text="Meni: " Grid.Row="2" VerticalAlignment="Top" FontSize="18px" HorizontalAlignment="Center" Margin="-130,10,0,0"/>
-        <Button x:ConnectionId='1' Content="Uposleni" Name="buttonUposleni" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Grid.Row="3" />
+        <Button x:ConnectionId='1' Content="Uposleni"                              Name="buttonUposleni" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="180" Grid.Row="3" />
         <Button x:ConnectionId='2' Content="Kina" Name="buttonKina"                          BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Width="180" />
         <Button x:ConnectionId='3' Content="Filmovi"                          Name="buttonFilm" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Width="180" />
         <Button x:ConnectionId='4' Content="Projekcije" BorderBrush="Blue" Name="buttonProjekcije" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="6" Width="180" />

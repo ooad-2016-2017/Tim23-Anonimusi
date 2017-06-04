@@ -26,5 +26,10 @@ namespace Projekat.Kino.Views
         {
             this.InitializeComponent();
         }
+        public void ok_Click(object sender, RoutedEventArgs e)
+        {
+            var rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(KupovinaUlaznica1));
+        }
     }
 }

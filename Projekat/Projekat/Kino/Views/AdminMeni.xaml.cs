@@ -24,5 +24,10 @@ namespace Projekat.Kino.Views
             var rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof(PregledFilma));
         }
+        public void buttonUposleni_Click(object sender, RoutedEventArgs e)
+        {
+            var rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(Izbor));
+        }
     }
 }

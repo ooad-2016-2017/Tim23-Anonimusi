@@ -412,6 +412,9 @@
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\Assets\pirati.jpg">
       <PackagePath>Kino\Views\Assets\pirati.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\logo.jpg">
+      <PackagePath>Kino\Views\logo.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\dieHard.jpg">
       <PackagePath>Kino\dieHard.jpg</PackagePath>
     </AppxPackagedFile>

@@ -40,7 +40,7 @@
                     <ColumnDefinition Width="*"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Image x:ConnectionId='9' x:Name="image" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="1"  Source="logo.jpg" Margin="0,5,0,0" VerticalAlignment="Stretch" />
+                <Image x:ConnectionId='10' x:Name="image" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="1"  Source="logo.jpg" Margin="0,5,0,0" VerticalAlignment="Stretch" />
             </Grid>
             <TextBlock Text="Pregled filmova" Grid.Row="1" Foreground="White" FontWeight="Bold" FontSize="20px" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="106,0,105,19" Height="27" Width="149" />
         <ListView x:ConnectionId='5' Grid.Row="2" x:Name="listaFilmova" ItemTemplate="{StaticResource FilmTemplate}" IsItemClickEnabled="True" ItemsSource="{Binding Path=filmovi}"  Background="#FF9FE5F9" HorizontalAlignment="Center"  Margin="45,1,45,0" VerticalAlignment="Stretch"  Foreground="#FFFAF5F5" >
@@ -52,10 +52,10 @@
             </ListView>
 
 
-            <Button x:ConnectionId='6' Content="Vidi detalje"                       Grid.Row="4" x:Name="pregled" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="5,42,185,62" Height="32" />
-            <Button x:ConnectionId='7' Content="Obriši"                      Grid.Row="4" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="185,42,5,62" Height="32" />
-            <Button Content="Dodaj projekciju"  Grid.Row="4" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="5,92,185,12" Height="32" />
-            <Button x:ConnectionId='8' Content="Novi film"                    Grid.Row="4" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="185,92,5,12" Height="32" />
+            <Button x:ConnectionId='6' Content="Vidi detalje"                       Grid.Row="4" x:Name="pregled" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="5,35,185,62" Height="32" />
+            <Button x:ConnectionId='7' Content="Obriši"                      Grid.Row="4" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="185,35,5,62" Height="32" />
+            <Button x:ConnectionId='8' Content="Dodaj projekciju"                      Grid.Row="4" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="5,92,185,12" Height="32" />
+            <Button x:ConnectionId='9' Content="Novi film"                    Grid.Row="4" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="185,92,5,12" Height="32" />
 
         </Grid>
 

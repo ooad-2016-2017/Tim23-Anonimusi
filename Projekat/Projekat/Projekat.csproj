@@ -137,11 +137,26 @@
     <Compile Include="Kino\Views\DetaljiFilma.xaml.cs">
       <DependentUpon>DetaljiFilma.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Kino\Views\IzaberiGrad.xaml.cs">
-      <DependentUpon>IzaberiGrad.xaml</DependentUpon>
+    <Compile Include="Kino\Views\DodavanjeProjekcije1.xaml.cs">
+      <DependentUpon>DodavanjeProjekcije1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Kino\Views\IzaberiProjekciju.xaml.cs">
       <DependentUpon>IzaberiProjekciju.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kino\Views\Izbor.xaml.cs">
+      <DependentUpon>Izbor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kino\Views\KupovinaUlaznica1.xaml.cs">
+      <DependentUpon>KupovinaUlaznica1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kino\Views\KupovinaUlaznica2.xaml.cs">
+      <DependentUpon>KupovinaUlaznica2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kino\Views\KupovinaUlaznica3.xaml.cs">
+      <DependentUpon>KupovinaUlaznica3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kino\Views\KupovinaUlaznicaOnline.xaml.cs">
+      <DependentUpon>KupovinaUlaznicaOnline.xaml</DependentUpon>
     </Compile>
     <Compile Include="Kino\Views\ListaKina.xaml.cs">
       <DependentUpon>ListaKina.xaml</DependentUpon>
@@ -161,6 +176,9 @@
     </Compile>
     <Compile Include="Kino\Views\PregledFilma.xaml.cs">
       <DependentUpon>PregledFilma.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kino\Views\PregledKina.xaml.cs">
+      <DependentUpon>PregledKina.xaml</DependentUpon>
     </Compile>
     <Compile Include="Kino\Views\PregledProjekcija.xaml.cs">
       <DependentUpon>PregledProjekcija.xaml</DependentUpon>
@@ -200,6 +218,7 @@
   <ItemGroup>
     <Content Include="Kino\Views\Assets\logo.jpg" />
     <Content Include="Kino\Views\Assets\pirati.jpg" />
+    <Content Include="Kino\Views\logo.jpg" />
     <Content Include="Kino\Views\reklama.png" />
     <Content Include="Kino\dieHard.jpg" />
     <Content Include="Properties\Default.rd.xml" />
@@ -228,13 +247,33 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Kino\Views\IzaberiGrad.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Kino\Views\DodavanjeProjekcije1.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Kino\Views\IzaberiProjekciju.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kino\Views\Izbor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kino\Views\KupovinaUlaznica1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Kino\Views\KupovinaUlaznica2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Kino\Views\KupovinaUlaznica3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Kino\Views\KupovinaUlaznicaOnline.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Kino\Views\ListaKina.xaml">
       <SubType>Designer</SubType>

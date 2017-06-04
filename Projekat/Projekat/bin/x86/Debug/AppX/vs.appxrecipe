@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-04T20:10:10.998</Modified>
+      <Modified>2017-06-04T21:33:51.661</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Projekat.exe">
       <PackagePath>entrypoint\Projekat.exe</PackagePath>
-      <Modified>2017-06-04T20:08:27.433</Modified>
+      <Modified>2017-06-04T21:33:28.473</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -552,6 +552,10 @@
       <PackagePath>Kino\Views\Assets\pirati.jpg</PackagePath>
       <Modified>2017-06-04T18:23:14.075</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\logo.jpg">
+      <PackagePath>Kino\Views\logo.jpg</PackagePath>
+      <Modified>2017-06-04T20:34:44.581</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\dieHard.jpg">
       <PackagePath>Kino\dieHard.jpg</PackagePath>
       <Modified>2017-06-04T18:23:14.136</Modified>
@@ -602,7 +606,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Projekat.xr.xml">
       <PackagePath>Projekat.xr.xml</PackagePath>
-      <Modified>2017-06-04T19:07:52.075</Modified>
+      <Modified>2017-06-04T21:27:54.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -611,11 +615,11 @@
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-04T20:08:29.183</Modified>
+      <Modified>2017-06-04T21:33:30.529</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Core\Projekat.exe">
       <PackagePath>Projekat.exe</PackagePath>
-      <Modified>2017-06-04T20:08:29.870</Modified>
+      <Modified>2017-06-04T21:33:31.313</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

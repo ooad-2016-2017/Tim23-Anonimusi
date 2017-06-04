@@ -52,9 +52,9 @@
             </ListView>
 
 
-            <Button Content="Vidi detalje" Click="detalji_Click" Grid.Row="4" x:Name="pregled" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="5,42,185,62" Height="32" />
-            <Button Content="Obriši" Click="obrisi_Click" Grid.Row="4" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="185,42,5,62" Height="32" />
-            <Button Content="Dodaj projekciju"  Grid.Row="4" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="5,92,185,12" Height="32" />
+            <Button Content="Vidi detalje" Click="detalji_Click" Grid.Row="4" x:Name="pregled" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="5,35,185,62" Height="32" />
+            <Button Content="Obriši" Click="obrisi_Click" Grid.Row="4" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="185,35,5,62" Height="32" />
+            <Button Content="Dodaj projekciju" Click="dodaj_Click"  Grid.Row="4" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="5,92,185,12" Height="32" />
             <Button Content="Novi film" Click="novi_Click" Grid.Row="4" BorderBrush="Blue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Margin="185,92,5,12" Height="32" />
 
         </Grid>

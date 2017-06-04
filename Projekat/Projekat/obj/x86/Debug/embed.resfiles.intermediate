@@ -2,8 +2,13 @@ App.xbf
 Kino\Views\AdminMeni.xbf
 Kino\Views\BrisanjeUposlenog.xbf
 Kino\Views\DetaljiFilma.xbf
-Kino\Views\IzaberiGrad.xbf
+Kino\Views\DodavanjeProjekcije1.xbf
 Kino\Views\IzaberiProjekciju.xbf
+Kino\Views\Izbor.xbf
+Kino\Views\KupovinaUlaznica1.xbf
+Kino\Views\KupovinaUlaznica2.xbf
+Kino\Views\KupovinaUlaznica3.xbf
+Kino\Views\KupovinaUlaznicaOnline.xbf
 Kino\Views\ListaKina.xbf
 Kino\Views\NoviClan.xbf
 Kino\Views\NoviFilm.xbf
