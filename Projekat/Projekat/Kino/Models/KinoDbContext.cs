@@ -18,7 +18,6 @@ namespace Projekat.Kino.Models
         public DbSet<Clan> Clanovi { get; set; }
         public DbSet<Ulaznica> Ulaznice { get; set; }
         public DbSet<Transakcija> Transakcije { get; set; }
-        public DbSet<eKupac> eKupci { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

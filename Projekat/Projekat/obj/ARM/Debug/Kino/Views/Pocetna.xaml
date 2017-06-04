@@ -33,11 +33,11 @@
             <ComboBoxItem Content="Mostar"/>
             <ComboBoxItem Content="Bihać"/>
         </ComboBox>
-        <Maps:MapControl Grid.Row="2" MapServiceToken=""  HorizontalAlignment="Center" Height="230" VerticalAlignment="Top" Width="310" Margin="15,150,15,0"/>
+        <Maps:MapControl x:ConnectionId='2' x:Name="mapaKina"  Grid.Row="2" MapServiceToken="qq7BIZZnK7aEQPG2pLNz~xoPxRNlGnGmLFTJxc-EcXg~At82DgmTCtGFEmHywqg56BpunhTXBcLGUq8uIyZFQu04XGCPSjZ63TjKkBg7ocTP"  HorizontalAlignment="Center" Height="230" VerticalAlignment="Top" Width="310" Margin="15,150,15,0"/>
         <Button Grid.Row="2" Content="Nazad" BorderBrush="#FFCF3103" Foreground="#FFCF3103" Background="#FFE4ECF9" HorizontalAlignment="Center" Margin="0,0,150,20" VerticalAlignment="Bottom" Width="130" Height="30"/>
-        <Button x:ConnectionId='2' Grid.Row="2" Content="OK"                  BorderBrush="#FFCF3103" Background="#FFE4ECF9" Foreground="#FFCF3103" HorizontalAlignment="Center" Margin="150,0,20,20" VerticalAlignment="Bottom" Width="130" Height="30"/>
+        <Button x:ConnectionId='3' Grid.Row="2" Content="OK"                  BorderBrush="#FFCF3103" Background="#FFE4ECF9" Foreground="#FFCF3103" HorizontalAlignment="Center" Margin="150,0,20,20" VerticalAlignment="Bottom" Width="130" Height="30"/>
 
-        <Image x:ConnectionId='3' x:Name="logo" Source="logo.jpg" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" Height="100" Width="170" Stretch="Fill" Margin="0,5,0,0" />
+        <Image x:ConnectionId='4' x:Name="logo" Source="logo.jpg" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" Height="100" Width="170" Stretch="Fill" Margin="0,5,0,0" />
 
 
     </Grid>

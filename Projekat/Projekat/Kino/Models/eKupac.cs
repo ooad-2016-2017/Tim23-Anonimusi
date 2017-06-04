@@ -9,12 +9,11 @@ namespace Projekat.Kino.Models
 {
     class eKupac
     {
-            
+        private string sifraRezervacije;
         private string ime;
         private string prezime;
         private string email;
         private string brojKartice;
-        private string sifraRezervacije;
         public List<Ulaznica> ulaznice { get; set; }
 
         public string Ime

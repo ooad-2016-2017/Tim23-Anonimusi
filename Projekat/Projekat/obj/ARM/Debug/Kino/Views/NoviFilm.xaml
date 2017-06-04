@@ -33,7 +33,7 @@
         <Image x:ConnectionId='1' x:Name="image" Height="90" Width="160" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,5,0,0" Source="logo.jpg" Grid.Row="0" Stretch="Fill" />
         <TextBlock Text="Novi film" Foreground="White" FontWeight="Bold" Grid.Row="0" FontSize="16px" VerticalAlignment="Bottom" Margin="10,0,10,10" />
         <Image x:ConnectionId='2' x:Name="slikaFilma"  CanDrag="True" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Width="60" Height="72" Margin="10,10,0,40"/>
-        <ComboBox Grid.Row="1" PlaceholderText="Žanr" VerticalAlignment="Center" Width="120px" Margin="100, 0, 0, 0">
+        <ComboBox x:ConnectionId='3' Grid.Row="1" PlaceholderText="Žanr" VerticalAlignment="Center" Width="120px" Margin="100, 0, 0, 0" x:Name="combozanr">
             <ComboBoxItem>Akcija</ComboBoxItem>
             <ComboBoxItem>Dokumentarac</ComboBoxItem>
             <ComboBoxItem>Drama</ComboBoxItem>
@@ -41,25 +41,29 @@
             <ComboBoxItem>Triler</ComboBoxItem>
         </ComboBox>
         <TextBlock Text="Naziv filma: " VerticalAlignment="Center" Grid.Row="2" Margin="10,5,0,0"/>
-        <TextBox x:ConnectionId='3' Name="nazivFilma" BorderBrush="OrangeRed" Grid.Row="2" Margin="100,5,10,0"  VerticalAlignment="Center"/>
+        <TextBox x:ConnectionId='4' Name="nazivFilma" BorderBrush="OrangeRed" Grid.Row="2" Margin="100,5,10,0"  VerticalAlignment="Center"/>
         <TextBlock Text="Godina: " Grid.Row="3" VerticalAlignment="Center" Margin="10,5,0,0" />
-        <TextBox x:ConnectionId='4' Name="godinaFilma" BorderBrush="OrangeRed" Grid.Row="3" Margin="100,5,10,0"  VerticalAlignment="Center"/>
+        <TextBox x:ConnectionId='5' Name="godinaFilma" BorderBrush="OrangeRed" Grid.Row="3" Margin="100,5,10,0"  VerticalAlignment="Center"/>
         <TextBlock Text="Trajanje: " VerticalAlignment="Center" Grid.Row="4" Margin="10,5,0,0" />
-        <Slider x:ConnectionId='5' Name="trajanjeFilma" Foreground="OrangeRed" Grid.Row="4" Margin="100,5,10,0" VerticalAlignment="Center" Minimum="60" Maximum="200" StepFrequency="5" />
+        <Slider x:ConnectionId='6' Name="trajanjeFilma" Foreground="OrangeRed" Grid.Row="4" Margin="100,5,10,0" VerticalAlignment="Center" Minimum="60" Maximum="200" StepFrequency="5" />
         <TextBlock Text="Plot: " Grid.Row="5" VerticalAlignment="Top" Margin="10,5,0,0" />
-        <RichEditBox x:ConnectionId='6' Name="plotFilma" BorderBrush="OrangeRed" Grid.Row="5" Margin="100,5,10,0" Height="70" VerticalAlignment="Center" />
+        <RichEditBox x:ConnectionId='7' Name="plotFilma" BorderBrush="OrangeRed" Grid.Row="5" Margin="100,5,10,0" Height="70" VerticalAlignment="Center" />
         <TextBlock Text="IMDB: " VerticalAlignment="Center" Grid.Row="6" Margin="10,5,0,0" />
-        <TextBox x:ConnectionId='7' Name="imdbFilma" BorderBrush="OrangeRed" Grid.Row="6" Margin="100, 5, 10, 0"  VerticalAlignment="Center" />
+        <TextBox x:ConnectionId='8' Name="imdbFilma" BorderBrush="OrangeRed" Grid.Row="6" Margin="100, 5, 10, 0"  VerticalAlignment="Center" />
         <Grid Grid.Row="7">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button x:ConnectionId='10' Content="Poništi"  Name="ponisti" BorderBrush="OrangeRed" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
-            <Button x:ConnectionId='11' Content="Dodaj"  Name="dodajFilm" BorderBrush="OrangeRed" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+            <Button x:ConnectionId='11' Content="Poništi"  Name="ponisti" BorderBrush="OrangeRed" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+            <Button x:ConnectionId='12' Content="Dodaj"  Name="dodajFilm" BorderBrush="OrangeRed" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center"                           >
+                <Button.Flyout>
+                    <MenuFlyout/>
+                </Button.Flyout>
+            </Button>
         </Grid>
-        <TextBlock x:ConnectionId='8' Name="poruka" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" Grid.Row="8" />
-        <Button x:ConnectionId='9' x:Name="odabriSlike" Content="Dodaj" FontSize="10px"                       HorizontalAlignment="Left" Height="25" Margin="10,0,0,10" Grid.Row="1" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Width="60">
+        <TextBlock x:ConnectionId='9' Name="poruka" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" Grid.Row="8" />
+        <Button x:ConnectionId='10' x:Name="odabriSlike" Content="Dodaj" FontSize="10px"                       HorizontalAlignment="Left" Height="25" Margin="10,0,0,10" Grid.Row="1" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Width="60">
 
 
         </Button>

@@ -183,9 +183,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20170528112551_InitialMigtation.cs" />
-    <Compile Include="Migrations\20170528112551_InitialMigtation.designer.cs">
-      <DependentUpon>20170528112551_InitialMigtation.cs</DependentUpon>
+    <Compile Include="Migrations\20170604200740_InitialMigration.cs" />
+    <Compile Include="Migrations\20170604200740_InitialMigration.designer.cs">
+      <DependentUpon>20170604200740_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\KinoDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

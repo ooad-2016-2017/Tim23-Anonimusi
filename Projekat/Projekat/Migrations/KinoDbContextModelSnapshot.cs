@@ -14,6 +14,24 @@ namespace ProjekatMigrations
             builder
                 .Annotation("ProductVersion", "7.0.0-beta6-13815");
 
+            builder.Entity("Projekat.Kino.Models.Clan", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Grad");
+
+                    b.Property<string>("Ime");
+
+                    b.Property<string>("MaticniBroj");
+
+                    b.Property<string>("Prezime");
+
+                    b.Property<string>("SifraKartice");
+
+                    b.Key("Id");
+                });
+
             builder.Entity("Projekat.Kino.Models.Film", b =>
                 {
                     b.Property<int>("filmId")
@@ -62,37 +80,78 @@ namespace ProjekatMigrations
 
                     b.Property<int>("idFilma");
 
+                    b.Property<string>("naziv");
+
                     b.Property<DateTime>("prviDan");
 
                     b.Property<int>("sala");
+
+                    b.Property<string>("termini");
 
                     b.Property<DateTime>("zadnjiDan");
 
                     b.Key("projekcijaId");
                 });
+
+            builder.Entity("Projekat.Kino.Models.Transakcija", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("BrojKarata");
+
+                    b.Property<int>("Cijena");
+
+                    b.Property<string>("Sifrarezervacije");
+
+                    b.Key("Id");
+                });
+
+            builder.Entity("Projekat.Kino.Models.Ulaznica", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<bool>("Iskoristena");
+
+                    b.Property<DateTime>("KrajFilma");
+
+                    b.Property<DateTime>("PocetakFilma");
+
+                    b.Property<bool>("Popust");
+
+                    b.Property<string>("Projekcija");
+
+                    b.Property<string>("Sala");
+
+                    b.Property<string>("Sifra");
+
+                    b.Property<string>("SifraRezervacije");
+
+                    b.Key("Id");
+                });
+
             builder.Entity("Projekat.Kino.Models.Uposleni", b =>
-            {
-                b.Property<int>("UposleniId")
-                    .ValueGeneratedOnAdd();
+                {
+                    b.Property<int>("UposleniId")
+                        .ValueGeneratedOnAdd();
 
-                b.Property<string>("FourSqaureId");
+                    b.Property<string>("FourSqaureId");
 
-                b.Property<string>("Ime");
+                    b.Property<string>("Ime");
 
-                b.Property<string>("KorisnickoIme");
+                    b.Property<string>("KorisnickoIme");
 
-                b.Property<string>("MaticniBroj");
+                    b.Property<string>("MaticniBroj");
 
-                b.Property<string>("Prezime");
+                    b.Property<string>("Prezime");
 
-                b.Property<string>("Sifra");
+                    b.Property<string>("Sifra");
 
-                b.Property<byte[]>("Slika")
-                    .Annotation("Relational:ColumnType", "image");
+                    b.Property<byte[]>("Slika");
 
-                b.Key("UposleniId");
-            });
-
+                    b.Key("UposleniId");
+                });
         }
     }
 }
