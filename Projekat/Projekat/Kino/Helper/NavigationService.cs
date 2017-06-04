@@ -8,7 +8,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace Projekat.Kino.Helper
 {
-    class NavigationService: iNavigationService
+    public class NavigationService: iNavigationService
     {
         //obicna navigacija bez parametra
         public void Navigate(Type sourcePage)

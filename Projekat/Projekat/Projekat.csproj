@@ -122,6 +122,11 @@
     <Compile Include="Kino\Models\Uposleni.cs" />
     <Compile Include="Kino\ViewModels\ComboBoxItemConvert.cs" />
     <Compile Include="Kino\ViewModels\CommandHandler.cs" />
+    <Compile Include="Kino\ViewModels\FilmViewModel.cs" />
+    <Compile Include="Kino\ViewModels\KinoViewModel.cs" />
+    <Compile Include="Kino\ViewModels\ListaFilmovaViewModel.cs" />
+    <Compile Include="Kino\ViewModels\ListaKinaViewModel.cs" />
+    <Compile Include="Kino\ViewModels\ListaProjekcijaViewModel.cs" />
     <Compile Include="Kino\ViewModels\SistemVM.cs" />
     <Compile Include="Kino\Views\AdminMeni.xaml.cs">
       <DependentUpon>AdminMeni.xaml</DependentUpon>

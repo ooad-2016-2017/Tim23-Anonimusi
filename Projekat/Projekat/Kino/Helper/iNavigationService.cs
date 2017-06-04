@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projekat.Kino.Helper
 {
-    interface iNavigationService
+   public interface iNavigationService
     {
         void Navigate(Type sourcePage);
         void Navigate(Type sourcePage, object parameter);
