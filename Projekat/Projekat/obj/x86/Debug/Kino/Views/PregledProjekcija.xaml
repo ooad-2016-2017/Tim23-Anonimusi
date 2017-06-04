@@ -1,13 +1,39 @@
-﻿<Page x:ConnectionId='1'
+﻿<Page
     x:Class="Projekat.Kino.Views.PregledProjekcija"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Projekat.Kino.Views"
+    xmlns:models="using:Projekat.Kino.Models"
+    xmlns:viewmodel="using:Projekat.Kino.ViewModels"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-                        >
+    mc:Ignorable="d">
+    <Page.Resources>
+        <DataTemplate x:Key="ProjekcijaListTemplate"                               >
+            <StackPanel x:ConnectionId='1' Orientation="Vertical" >
+                <TextBlock x:ConnectionId='2' x:Name="filmNaziv"                        Foreground="DarkBlue" FontSize="20px" FontWeight="Bold" Margin="5,0,0,0"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0"  Grid.Column="0" Text="Prvi dan projekcije: "></TextBlock>
+                    <TextBlock x:ConnectionId='3' x:Name="pocetak" Foreground="DarkBlue" Grid.Column="1" Grid.Row="0"                        />
 
+                    <TextBlock Grid.Row="1"  Grid.Column="0" Text="Zadnji dan projekcije:   "></TextBlock>
+                    <TextBlock x:ConnectionId='4' Grid.Row="1" Foreground="DarkBlue" Grid.Column="1" x:Name="kraj"                          />
+                    <TextBlock Grid.Row="2"  Text="Termini: " Grid.Column="0"/>
+                    <TextBlock x:ConnectionId='5' Grid.Row="2" x:Name="termini" Foreground="DarkBlue"                         Grid.Column="1" />
+                </Grid>
+
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -22,27 +48,26 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Image Source="logo.jpg" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="50,0,50,0" />
-        <TextBlock Text="Ovosedmične projekcije: " FontWeight="Bold" Grid.Row="1" Foreground="AliceBlue" Margin="10,20,0,0" />
-        <ListBox x:ConnectionId='2' Background="Transparent" x:Name="listaProjekcija" Grid.Row="1" VerticalAlignment="Stretch" Margin="0,60,0,5" HorizontalAlignment="Center">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Vertical" >
-                        <TextBox x:Name="filmNaziv" Background="Transparent"  Foreground="DarkSlateBlue" FontWeight="Bold" Margin="5,0,0,0"/>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Prvi dan projekcije: "></TextBlock>
-                            <TextBlock x:Name="pocetak" />
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Zadnji dan projekcije: "></TextBlock>
-                            <TextBlock x:Name="kraj" />
-                        </StackPanel>
-                        <HyperlinkButton Content="{Binding imdb}" Foreground="Blue" />
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
-        <Button Content="Vidi detalje" Grid.Row="2" BorderBrush="OrangeRed" Foreground="OrangeRed" Background="AliceBlue" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image Source="logo.jpg" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Stretch="Fill" />
+        </Grid>
+        
+        <TextBlock Text="Ovosedmične projekcije: " FontSize="20px" FontWeight="Bold" Grid.Row="1" Foreground="AliceBlue" Margin="10,20,0,0" />
+        <ListView x:ConnectionId='6' ItemTemplate="{StaticResource ProjekcijaListTemplate}" 
+                  IsItemClickEnabled="True" Background="Transparent" ItemsSource="{Binding Path=projekcije}" x:Name="listaProjekcija" Grid.Row="1" VerticalAlignment="Stretch" Margin="0,60,0,5" HorizontalAlignment="Center">
+            <ListView.Template>
+                <ControlTemplate>
+                    <ItemsPresenter Grid.Row="0"></ItemsPresenter>
+
+                </ControlTemplate>
+            </ListView.Template>
+        </ListView>
+        <Button x:ConnectionId='7' Content="Vidi detalje filma" Grid.Row="2"                       BorderBrush="OrangeRed" Foreground="OrangeRed" Background="AliceBlue" VerticalAlignment="Center" HorizontalAlignment="Center" />
     </Grid>
 </Page>
 

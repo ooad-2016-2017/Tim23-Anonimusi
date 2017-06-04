@@ -4,11 +4,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Projekat.Kino.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:models="using:Projekat.Kino.Models"
+    xmlns:viewmodel="using:Projekat.Kino.ViewModels"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    
 
-   
-        <Grid>
+    <Grid>
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="White" Offset="0.991"/>
@@ -17,28 +19,48 @@
                 </LinearGradientBrush>
             </Grid.Background>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="5*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
-            <Image x:Name="image" Grid.Row="0" HorizontalAlignment="Center" Height="100" Margin="0,5,0,0" VerticalAlignment="Top" Source="Assets/logo.jpg" Width="170" Stretch="Fill"/>
-        <Grid Grid.Row="1">
-            <ListView x:Name="detalji" Background="Transparent">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Vertical" >
-                            <TextBlock Text="{Binding naziv}" Foreground="DarkSlateBlue" FontWeight="Bold" Margin="5,0,0,0"/>
-                            <TextBlock Text="{Binding godina}" Foreground="DarkSlateBlue" FontStyle="Italic" Margin="5,0,0,0" />
-                            <TextBlock Text="{Binding zanr}" Foreground="DarkSlateBlue"/>
-                            <TextBlock Text="{Binding trajanje}"  Foreground="DarkSlateBlue"/>
-                            <TextBlock Text="{Binding plot}"  Foreground="DarkSlateBlue"/>
-                            <HyperlinkButton Content="{Binding imdb}" Foreground="Blue" />
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="1.3*"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="image" Grid.Column="1" HorizontalAlignment="Center"  Margin="0,5,0,0" VerticalAlignment="Stretch" Source="logo.jpg"  Stretch="Fill"/>
         </Grid>
-        <Button Content="Nazad" Click="nazad_Click" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="Blue" BorderThickness="5" Background="Transparent"> </Button>             
+         
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="8*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="1" Orientation="Vertical">
+                <TextBlock Text="" Height="70"/>
+                <TextBlock Text="{Binding Path=film.naziv}" HorizontalAlignment="Center" FontSize="27px" Foreground="White" FontWeight="Bold" Margin="5,0,0,0"/>
+                <TextBlock Text="{Binding Path=film.godina}" HorizontalAlignment="Center" FontSize="20px" Height="50" Foreground="White" FontStyle="Italic" Margin="5,0,0,0" />
+                <Grid>
+                    
+                    <TextBlock Text="Žanr: "  HorizontalAlignment="Center" FontSize="18px" Height="40"  Margin="-170,0,0,0" />
+                    <TextBlock Text="{Binding Path=film.zanr}" HorizontalAlignment="Center" Height="40"  FontSize="20px" Margin="5,0,0,0"/>
+                </Grid>
+                <Grid>
+                    
+                    <TextBlock Text="Trajanje: "  HorizontalAlignment="Center" Height="40"  FontSize="18px" Margin="-147,0,0,0"/>
+                    <TextBlock Text="{Binding Path=film.trajanje}" HorizontalAlignment="Center" Height="40"   FontSize="20px" Margin="5,0,0,0"/>
+                </Grid>
+                <Grid>
+                    <TextBlock Text="IMDb link: " HorizontalAlignment="Center" TextAlignment="Center" FontSize="18px" Margin="-250,30,0,0"/>
+                    <HyperlinkButton Content="{Binding Path=film.imdb}" HorizontalAlignment="Center"  VerticalAlignment="Center" FontSize="20px" Margin="175,25,0,0" />
+                </Grid>
+                
+                <TextBlock Text="{Binding Path=film.plot}" HorizontalAlignment="Center" FontSize="20px" Margin="5,0,0,0" />
+            </StackPanel>
+        </Grid>
+       
                     
 
 

@@ -33,7 +33,7 @@
         <Image x:Name="image" Height="90" Width="160" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,5,0,0" Source="logo.jpg" Grid.Row="0" Stretch="Fill" />
         <TextBlock Text="Novi film" Foreground="White" FontWeight="Bold" Grid.Row="0" FontSize="16px" VerticalAlignment="Bottom" Margin="10,0,10,10" />
         <Image x:Name="slikaFilma"  CanDrag="True" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Width="60" Height="72" Margin="10,10,0,40"/>
-        <ComboBox Grid.Row="1" PlaceholderText="Žanr" VerticalAlignment="Center" Width="120px" Margin="100, 0, 0, 0" Name="combozanr">
+        <ComboBox Grid.Row="1" PlaceholderText="Žanr" VerticalAlignment="Center" Width="120px" Margin="100, 0, 0, 0" x:Name="combozanr">
             <ComboBoxItem>Akcija</ComboBoxItem>
             <ComboBoxItem>Dokumentarac</ComboBoxItem>
             <ComboBoxItem>Drama</ComboBoxItem>

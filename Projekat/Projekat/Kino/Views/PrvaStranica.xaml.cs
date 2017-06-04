@@ -26,5 +26,10 @@ namespace Projekat.Kino.Views
             var rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof(Pocetna));
         }
+        public void projekcije_Click(object sender, RoutedEventArgs e)
+        {
+            var rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(PregledProjekcija));
+        }  
     }
 }

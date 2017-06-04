@@ -1,5 +1,6 @@
 ﻿using Microsoft.Data.Entity;
 using Projekat.Kino.Models;
+using Projekat.Kino.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace Projekat.Kino.Views
         private Models.Kino kino;
         public UrediKino()
         {
+            
             this.InitializeComponent();
             
         }
@@ -50,14 +52,8 @@ namespace Projekat.Kino.Views
             if (e.Content!=null)
             {
                 this.kino = (Models.Kino)e.Parameter;
-                using (var db = new KinoDbContext())
-                {
-                    idKina.Text += kino.kinoId.ToString();
-                    grad.SelectedValue = kino.grad;
-                    adresaKina.Text = kino.adresa;
-                    telefon.Text = kino.telefon;
-                    emailKina.Text = kino.email;
-                }
+                DataContext = new KinoViewModel(kino.kinoId);
+                idKina.Text += kino.kinoId.ToString();
             }
         }
     }

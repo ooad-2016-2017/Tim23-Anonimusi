@@ -33,7 +33,7 @@
             <ComboBoxItem Content="Mostar"/>
             <ComboBoxItem Content="Bihać"/>
         </ComboBox>
-        <Maps:MapControl Grid.Row="2" MapServiceToken=""  HorizontalAlignment="Center" Height="230" VerticalAlignment="Top" Width="310" Margin="15,150,15,0"/>
+        <Maps:MapControl x:Name="mapaKina"  Grid.Row="2" MapServiceToken="qq7BIZZnK7aEQPG2pLNz~xoPxRNlGnGmLFTJxc-EcXg~At82DgmTCtGFEmHywqg56BpunhTXBcLGUq8uIyZFQu04XGCPSjZ63TjKkBg7ocTP"  HorizontalAlignment="Center" Height="230" VerticalAlignment="Top" Width="310" Margin="15,150,15,0"/>
         <Button Grid.Row="2" Content="Nazad" BorderBrush="#FFCF3103" Foreground="#FFCF3103" Background="#FFE4ECF9" HorizontalAlignment="Center" Margin="0,0,150,20" VerticalAlignment="Bottom" Width="130" Height="30"/>
         <Button Grid.Row="2" Content="OK" Click="ok_Click" BorderBrush="#FFCF3103" Background="#FFE4ECF9" Foreground="#FFCF3103" HorizontalAlignment="Center" Margin="150,0,20,20" VerticalAlignment="Bottom" Width="130" Height="30"/>
 

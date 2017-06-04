@@ -1,4 +1,5 @@
 ﻿using Projekat.Kino.Models;
+using Projekat.Kino.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace Projekat.Kino.Views
 {
     public sealed partial class DetaljiFilma : Page
     {
+        private Film film;
         public DetaljiFilma()
         {
             this.InitializeComponent();
@@ -19,8 +21,12 @@ namespace Projekat.Kino.Views
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            Film film = e.Parameter as Film;
-            detalji.ItemsSource = film;
+            base.OnNavigatedTo(e);
+            if (e.Content != null)
+            {
+                this.film = (Film)e.Parameter;
+                DataContext = new FilmViewModel(film.filmId);
+            }
         }
         public void nazad_Click(object sender, RoutedEventArgs e)
         {

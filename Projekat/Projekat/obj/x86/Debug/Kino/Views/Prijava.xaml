@@ -19,19 +19,30 @@
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="6*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Prijava" FontWeight="Bold" Margin="10,0,0,20" VerticalAlignment="Bottom" Grid.Row="0" FontSize="20px" Foreground="White"/>
-        <TextBlock Text="Korisničko ime: " Margin="-220,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" FontSize="18px" />
-        <TextBox x:ConnectionId='1' Name="korisnickoIme" BorderBrush="Blue" HorizontalAlignment="Center" Margin="150, 0, 10,0" Width="190" Height="30" Grid.Row="1"/>
-        <TextBlock Text="Lozinka: "  Margin="-280,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" />
-        <PasswordBox x:ConnectionId='2' BorderBrush="Blue" Name="lozinka" HorizontalAlignment="Center" Margin="150, 0, 10,0" Width="190" Height="30" Grid.Row="2" />
-        <Button x:ConnectionId='3' Content="Prijava" Name="prijava"                            Margin="150,20,10,0" VerticalAlignment="Top" BorderBrush="Blue" HorizontalAlignment="Center" Width="190" Height="40px" Grid.Row="3"/>
-        <Image HorizontalAlignment="Center" Grid.Row="0" Source="logo.jpg" Height="100" Margin="0,5,0,0" VerticalAlignment="Top" Width="170" Stretch="Fill"/>
-        <TextBlock x:ConnectionId='4' Name="poruka" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" Foreground="Red" FontWeight="Bold" Grid.Row="4" />
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image x:ConnectionId='5' x:Name="image" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="1"  Source="logo.jpg" Margin="0,5,0,0" VerticalAlignment="Stretch" />
+        </Grid>
+
+        <TextBlock Text="Prijava" FontWeight="Bold" Margin="10,0,0,20" VerticalAlignment="Bottom" Grid.Row="1" FontSize="20px" Foreground="White"/>
+        <TextBlock Text="Korisničko ime: " Margin="-220,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" FontSize="18px" />
+        <TextBox x:ConnectionId='1' Name="korisnickoIme" BorderBrush="Blue" HorizontalAlignment="Center" Margin="150, 0, 10,0" Width="190" Height="30" Grid.Row="2"/>
+        <TextBlock Text="Lozinka: "  Margin="-280,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" />
+        <PasswordBox x:ConnectionId='2' BorderBrush="Blue" Name="lozinka" HorizontalAlignment="Center" Margin="150, 0, 10,0" Width="190" Height="30" Grid.Row="3" />
+        <Button x:ConnectionId='3' Content="Prijava" Name="prijava"                            Margin="150,20,10,0" VerticalAlignment="Top" BorderBrush="Blue" HorizontalAlignment="Center" Width="190" Height="40px" Grid.Row="4"/>
+       
+        <TextBlock x:ConnectionId='4' Name="poruka" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" Foreground="Red" FontWeight="Bold" Grid.Row="5" />
     </Grid>
 </Page>
 

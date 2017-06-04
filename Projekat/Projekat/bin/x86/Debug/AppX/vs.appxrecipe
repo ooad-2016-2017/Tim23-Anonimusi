@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>484C70482E05A2C23CD2C5F57B1EA4ABFA9240BC1AE830558EAE044177821C17</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>E43D2BCED7455A55F2EFBC09F913139949D8F821FF9C3628EDA9F5DCDC022FE6</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3895aa01-e9fc-46fd-a96c-14243841b75c_1.0.0.0_x86__1v95xb54f833e</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3895aa01-e9fc-46fd-a96c-14243841b75c_1v95xb54f833e!App</RegisteredUserModeAppID>
     <RegisteredPackageID>3895aa01-e9fc-46fd-a96c-14243841b75c</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-04T18:35:35.766</Modified>
+      <Modified>2017-06-04T19:18:45.371</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Projekat.exe">
       <PackagePath>entrypoint\Projekat.exe</PackagePath>
-      <Modified>2017-06-04T18:30:09.720</Modified>
+      <Modified>2017-06-04T19:18:42.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -602,7 +602,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Projekat.xr.xml">
       <PackagePath>Projekat.xr.xml</PackagePath>
-      <Modified>2017-06-04T18:23:17.665</Modified>
+      <Modified>2017-06-04T19:07:52.075</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -611,11 +611,11 @@
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-04T18:30:14.659</Modified>
+      <Modified>2017-06-04T19:18:44.653</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Core\Projekat.exe">
       <PackagePath>Projekat.exe</PackagePath>
-      <Modified>2017-06-04T18:30:16.300</Modified>
+      <Modified>2017-06-04T19:18:45.342</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

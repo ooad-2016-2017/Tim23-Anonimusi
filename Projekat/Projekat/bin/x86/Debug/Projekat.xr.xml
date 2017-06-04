@@ -4,8 +4,9 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="imdb" />
+    <RootPropertyPathName Name="film" />
     <RootPropertyPathName Name="plot" />
+    <RootPropertyPathName Name="imdb" />
     <RootPropertyPathName Name="trajanje" />
     <RootPropertyPathName Name="zanr" />
     <RootPropertyPathName Name="godina" />
@@ -15,6 +16,9 @@
     <RootPropertyPathName Name="grad" />
     <RootPropertyPathName Name="adresa" />
     <RootPropertyPathName Name="kinoId" />
+    <RootPropertyPathName Name="kino" />
+    <RootPropertyPathName Name="filmovi" />
+    <RootPropertyPathName Name="projekcije" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -23,7 +27,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Content" />
       <RootProperty Name="Resources" />
-      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
@@ -74,9 +77,8 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Height" />
-      <RootProperty Name="BorderThickness" />
-      <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Padding" />
       <RootProperty Name="FontSize" />
@@ -85,14 +87,17 @@
       <RootProperty Name="Flyout" />
       <RootEvent Name="Click" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Source" />
-      <RootProperty Name="Width" />
       <RootProperty Name="Stretch" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="CanDrag" />
     </RootType>
@@ -129,38 +134,26 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Name" />
       <RootProperty Name="BorderBrush" />
+      <RootProperty Name="IsReadOnly" />
       <RootProperty Name="PlaceholderText" />
-      <RootProperty Name="FontWeight" />
     </RootType>
     <RootType FullName="Projekat.Kino.Views.BrisanjeUposlenog" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="Background" />
-      <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="BorderBrush" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="Items" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.DataTemplate">
-      <RootProperty Name="Template" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
       <RootProperty Name="Content" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Foreground" />
       <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Projekat.Kino.Views.DetaljiFilma" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="HorizontalAlignment" />
@@ -173,14 +166,30 @@
       <RootProperty Name="Items" />
       <RootProperty Name="MinHeight" />
       <RootProperty Name="Padding" />
-      <RootProperty Name="Name" />
       <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="SelectedValue" />
+      <RootProperty Name="Name" />
       <RootProperty Name="BorderBrush" />
     </RootType>
     <RootType FullName="Projekat.Kino.Views.IzaberiGrad" />
-    <RootType FullName="Projekat.Kino.Views.IzaberiProjekciju" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Template" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Projekat.Kino.Views.IzaberiProjekciju" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Projekat.Kino.Views.ListaKina" />
     <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
@@ -227,16 +236,14 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Projekat.Kino.Views.Pocetna" />
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPresenter" />
     <RootType FullName="Projekat.Kino.Views.PregledFilma" />
     <RootType FullName="Projekat.Kino.Views.PregledKina" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
-      <RootProperty Name="Background" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="ItemTemplate" />
-    </RootType>
     <RootType FullName="Projekat.Kino.Views.PregledProjekcija" />
     <RootType FullName="Projekat.Kino.Views.PreuzimanjeUlaznica" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
@@ -257,6 +264,7 @@
     <RootType FullName="Projekat.Kino.Views.PrvaStranica" />
     <RootType FullName="Projekat.Kino.Views.UnosUposlenog" />
     <RootType FullName="Projekat.Kino.Views.UrediKino" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootProperty Name="Name" />
     </RootType>

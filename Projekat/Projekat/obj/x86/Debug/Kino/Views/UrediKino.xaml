@@ -18,19 +18,20 @@
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="5*"/>
+            <RowDefinition Height="1.2*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="5*"/>
+            <RowDefinition Height="4*"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Uređivanje informacija o kinu " Foreground="WhiteSmoke" VerticalAlignment="Bottom" Margin="10, 0, 0, 20" FontSize="16" Grid.Row="0" FontWeight="Bold"/>
-        <TextBlock x:ConnectionId='1' Text="ID-broj kina: " FontWeight="Bold" FontSize="20px" x:Name="idKina" Margin="10,5,10,0" Grid.Row="1"/>
-        <TextBlock Text="Adresa: " VerticalAlignment="Center" Margin="10,0,10,0" Grid.Row="2" />
-        <TextBox x:ConnectionId='2' Height="30px" HorizontalAlignment="Left" Width="270" BorderBrush="Orange" VerticalAlignment="Center" Name="adresaKina" Margin="100, 5, 10, 0" Grid.Row="2"/>
-        <TextBlock Text="Grad: " HorizontalAlignment="Left" Width="270" VerticalAlignment="Center" Margin="10, 5, 0, 0" Grid.Row="3" />
-        <ComboBox x:ConnectionId='3' Name="grad" BorderBrush="Orange" Grid.Row="3" Width="250px" VerticalAlignment="Center" Height="30" Margin="100,5, 0, 0" >
+        <TextBlock Text="Uređivanje informacija o kinu " Foreground="WhiteSmoke" VerticalAlignment="Bottom" Margin="10, 0, 0, 20" FontSize="16" Grid.Row="1" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='1' Text="ID-broj kina: " FontWeight="Bold" FontSize="20px" x:Name="idKina" Margin="10,5,10,0" Grid.Row="2"/>
+        <TextBlock Text="Adresa: " VerticalAlignment="Center" Margin="10,0,10,0" Grid.Row="3" />
+        <TextBox x:ConnectionId='2' Height="30px" Text="{Binding Path=kino.adresa}" HorizontalAlignment="Left" Width="270" BorderBrush="Orange" VerticalAlignment="Center" Name="adresaKina" Margin="100, 5, 10, 0" Grid.Row="3"/>
+        <TextBlock Text="Grad: " HorizontalAlignment="Left" Width="270" VerticalAlignment="Center" Margin="10, 5, 0, 0" Grid.Row="4" />
+        <ComboBox x:ConnectionId='3' SelectedValue="{Binding Path=kino.grad}" Name="grad" BorderBrush="Orange" Grid.Row="4" Width="250px" VerticalAlignment="Center" Height="30" Margin="100,5, 0, 0" >
             <ComboBoxItem>Sarajevo</ComboBoxItem>
             <ComboBoxItem>Mostar</ComboBoxItem>
             <ComboBoxItem>Bihac</ComboBoxItem>
@@ -38,19 +39,23 @@
             <ComboBoxItem>Banja Luka</ComboBoxItem>
             <ComboBoxItem>Travnik</ComboBoxItem>
         </ComboBox>
-        <TextBlock Text="Broj telefona: " VerticalAlignment="Center" Grid.Row="4" Margin="10, 5, 0, 0"/>
-        <TextBox x:ConnectionId='4' Height="30px" Width="270" HorizontalAlignment="Left" BorderBrush="Orange" VerticalAlignment="Center" Name="telefon" Grid.Row="4" Margin="100,5,10,0" />
-        <TextBlock Text="E-mail: " VerticalAlignment="Center" Grid.Row="5" Margin="10, 5, 0, 0" />
-        <TextBox x:ConnectionId='5' Name="emailKina" Width="270" HorizontalAlignment="Left" BorderBrush="Orange" Height="30px" Grid.Row="5" Margin="100, 5, 10, 0" />
-        <Grid Grid.Row="6">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
+        <TextBlock Text="Broj telefona: " VerticalAlignment="Center" Grid.Row="5" Margin="10, 5, 0, 0"/>
+        <TextBox x:ConnectionId='4' Height="30px" Width="270" Text="{Binding Path=kino.telefon}" HorizontalAlignment="Left" BorderBrush="Orange" VerticalAlignment="Center" Name="telefon" Grid.Row="5" Margin="100,5,10,0" />
+        <TextBlock Text="E-mail: " VerticalAlignment="Center" Grid.Row="6" Margin="10, 5, 0, 0" />
+        <TextBox x:ConnectionId='5' Name="emailKina" Text="{Binding Path=kino.email}" Width="270" HorizontalAlignment="Left" BorderBrush="Orange" Height="30px" Grid.Row="6" Margin="100, 5, 10, 0" />
+        <Grid Grid.Row="7">
+            
             <Button x:ConnectionId='7' Content="Poništi"                       Name="ponistiPromjene" Height="40px" BorderBrush="Orange" HorizontalAlignment="Left" Width="170" Grid.Column="0" />
-            <Button x:ConnectionId='8' Content="Spremi"                      Height="40px" Name="spremiPromjene" BorderBrush="Orange" HorizontalAlignment="Left" Width="170" Grid.Column="1" />
+            <Button x:ConnectionId='8' Content="Spremi"                      Height="40px" Name="spremiPromjene" BorderBrush="Orange" HorizontalAlignment="Right" Width="170" Margin="170,0,0,0" Grid.Column="0" />
         </Grid>
-        <Image x:ConnectionId='6' x:Name="image" HorizontalAlignment="Center" Height="90" Source="logo.jpg" Margin="0,5,0,0" VerticalAlignment="Top" Width="160" Stretch="Fill"/>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image x:ConnectionId='6' x:Name="image" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="1"  Source="logo.jpg" Margin="0,5,0,0" VerticalAlignment="Stretch" />
+        </Grid>
     </Grid>
 </Page>
 

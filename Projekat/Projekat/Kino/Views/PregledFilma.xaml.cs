@@ -1,4 +1,5 @@
 ﻿using Projekat.Kino.Models;
+using Projekat.Kino.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,20 +14,15 @@ namespace Projekat.Kino.Views
     {
         public PregledFilma()
         {
+            DataContext = new ListaFilmovaViewModel();
             this.InitializeComponent();
-            using (var db = new KinoDbContext())
-            {
-                listaFilmova.ItemsSource = db.Filmovi.OrderBy(c => c.filmId).ToList();
-            }
+           
         }
-        public Film getSelected()
-        {
-            return (Film) listaFilmova.SelectedValue;
-        }
+        
         public void detalji_Click(object sender, RoutedEventArgs e)
         {
             var rootFrame = Window.Current.Content as Frame;
-            rootFrame.Navigate(typeof(DetaljiFilma), getSelected() );
+            rootFrame.Navigate(typeof(DetaljiFilma), (Film) listaFilmova.SelectedValue);
         }
         public void obrisi_Click(object sender, RoutedEventArgs e)
         {

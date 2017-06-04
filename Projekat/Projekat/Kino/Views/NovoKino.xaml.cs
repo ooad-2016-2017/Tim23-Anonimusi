@@ -12,8 +12,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Core;
-using Microsoft.WindowsAzure.MobileServices;
-using Windows.UI.Popups;
+using Projekat.Kino.ViewModels;
 
 namespace Projekat.Kino.Views
 {
@@ -21,10 +20,19 @@ namespace Projekat.Kino.Views
     {
         public NovoKino()
         {
+            
             this.InitializeComponent();
 
         }
-       
+       private void generisi_Click(object sender, RoutedEventArgs e)
+        {
+            using (var db=new KinoDbContext())
+            {
+                Film film = db.Filmovi.OrderBy(c => c.filmId).Last();
+                int id = film.filmId + 1;
+                idKina.Text = id.ToString();
+            }
+        }
         private void dugmeDodajKino_Click(object sender, RoutedEventArgs e)
         {
             using (var db = new Models.KinoDbContext())
@@ -33,7 +41,7 @@ namespace Projekat.Kino.Views
                 {
                     kinoId = int.Parse(idKina.Text),
                     adresa = adresaKina.Text,
-                    grad = grad.SelectedValue.ToString(),
+                    grad = ((ComboBoxItem)grad.SelectedItem).Content.ToString(),
                     telefon= telefon.Text,
                     email= emailKina.Text,
                 };

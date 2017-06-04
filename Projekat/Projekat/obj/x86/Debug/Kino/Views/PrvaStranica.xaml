@@ -45,9 +45,9 @@
                     <RowDefinition Height="4*"></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <Button Content="Pregled projekcija" Grid.Row="0" BorderBrush="Orange" Foreground="White" Margin="20,5,20,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-                <Button x:ConnectionId='3' Content="Odabir kina"                         BorderBrush="Orange" Foreground="White" Margin="20,5,20,0" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-                <Image x:ConnectionId='4' Margin="20,20,20,20" x:Name="Reklama" VerticalAlignment="Stretch" Grid.Row="2" Source="Assets/pirati.jpg" HorizontalAlignment="Stretch" />
+                <Button x:ConnectionId='3' Content="Pregled projekcija"                          Grid.Row="0" BorderBrush="Orange" Foreground="White" Margin="20,5,20,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Button x:ConnectionId='4' Content="Odabir kina"                         BorderBrush="Orange" Foreground="White" Margin="20,5,20,0" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Image x:ConnectionId='5' Margin="20,20,20,20" x:Name="Reklama" VerticalAlignment="Stretch" Grid.Row="2" Source="Assets/pirati.jpg" HorizontalAlignment="Stretch" />
             </Grid>
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
