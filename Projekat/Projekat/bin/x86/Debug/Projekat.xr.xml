@@ -4,6 +4,12 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="uposleni" />
+    <RootPropertyPathName Name="Sifra" />
+    <RootPropertyPathName Name="KorisnickoIme" />
+    <RootPropertyPathName Name="MaticniBroj" />
+    <RootPropertyPathName Name="Prezime" />
+    <RootPropertyPathName Name="Ime" />
     <RootPropertyPathName Name="film" />
     <RootPropertyPathName Name="plot" />
     <RootPropertyPathName Name="imdb" />
@@ -98,8 +104,8 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Source" />
       <RootProperty Name="Stretch" />
-      <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
       <RootProperty Name="CanDrag" />
     </RootType>
     <RootType FullName="Projekat.Kino.Views.AdminMeni" />
@@ -119,10 +125,10 @@
       <RootProperty Name="Padding" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Text" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
@@ -130,21 +136,32 @@
       <RootProperty Name="Background" />
       <RootProperty Name="MinHeight" />
       <RootProperty Name="Padding" />
+      <RootProperty Name="PlaceholderText" />
       <RootProperty Name="FontStyle" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Name" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="IsReadOnly" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Password" />
       <RootProperty Name="PlaceholderText" />
     </RootType>
     <RootType FullName="Projekat.Kino.Views.BrisanjeUposlenog" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Path" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
       <RootProperty Name="Content" />
@@ -214,17 +231,6 @@
       <RootProperty Name="RenderTransformOrigin" />
     </RootType>
     <RootType FullName="Projekat.Kino.Views.KupovinaUlaznica2" />
-    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Name" />
-      <RootProperty Name="BorderBrush" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Password" />
-      <RootProperty Name="PlaceholderText" />
-    </RootType>
     <RootType FullName="Projekat.Kino.Views.KupovinaUlaznica3" />
     <RootType FullName="Projekat.Kino.Views.KupovinaUlaznica4" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">

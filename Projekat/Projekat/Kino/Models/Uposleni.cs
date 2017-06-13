@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Projekat.Kino.Models
 {
-    class Uposleni
+    public class Uposleni
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UposleniId { get; set; }

@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-04T21:33:51.661</Modified>
+      <Modified>2017-06-13T09:19:21.333</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Projekat.exe">
       <PackagePath>entrypoint\Projekat.exe</PackagePath>
-      <Modified>2017-06-04T21:33:28.473</Modified>
+      <Modified>2017-06-13T09:18:21.656</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -546,55 +546,55 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\Assets\logo.jpg">
       <PackagePath>Kino\Views\Assets\logo.jpg</PackagePath>
-      <Modified>2017-06-04T18:23:14.070</Modified>
+      <Modified>2017-06-05T07:04:35.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\Assets\pirati.jpg">
       <PackagePath>Kino\Views\Assets\pirati.jpg</PackagePath>
-      <Modified>2017-06-04T18:23:14.075</Modified>
+      <Modified>2017-06-05T07:04:35.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\logo.jpg">
       <PackagePath>Kino\Views\logo.jpg</PackagePath>
-      <Modified>2017-06-04T20:34:44.581</Modified>
+      <Modified>2017-06-05T07:04:35.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\dieHard.jpg">
       <PackagePath>Kino\dieHard.jpg</PackagePath>
-      <Modified>2017-06-04T18:23:14.136</Modified>
+      <Modified>2017-06-05T07:04:35.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\reklama.png">
       <PackagePath>Kino\Views\reklama.png</PackagePath>
-      <Modified>2017-06-04T18:23:14.134</Modified>
+      <Modified>2017-06-05T07:04:35.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Kino\Views\Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-06-04T18:23:14.051</Modified>
+      <Modified>2017-06-05T07:04:35.355</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\Assets\SplashScreen.scale-200.png">
       <PackagePath>Kino\Views\Assets\SplashScreen.scale-200.png</PackagePath>
-      <Modified>2017-06-04T18:23:14.054</Modified>
+      <Modified>2017-06-05T07:04:35.357</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Kino\Views\Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <Modified>2017-06-04T18:23:14.057</Modified>
+      <Modified>2017-06-05T07:04:35.360</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Kino\Views\Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <Modified>2017-06-04T18:23:14.059</Modified>
+      <Modified>2017-06-05T07:04:35.362</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Kino\Views\Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <Modified>2017-06-04T18:23:14.060</Modified>
+      <Modified>2017-06-05T07:04:35.364</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\Assets\StoreLogo.png">
       <PackagePath>Kino\Views\Assets\StoreLogo.png</PackagePath>
-      <Modified>2017-06-04T18:23:14.062</Modified>
+      <Modified>2017-06-05T07:04:35.366</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Kino\Views\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Kino\Views\Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <Modified>2017-06-04T18:23:14.064</Modified>
+      <Modified>2017-06-05T07:04:35.368</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-06-04T18:23:14.154</Modified>
+      <Modified>2017-06-05T07:04:35.491</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.xml">
       <PackagePath>EntityFramework.Commands.xml</PackagePath>
@@ -606,7 +606,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Projekat.xr.xml">
       <PackagePath>Projekat.xr.xml</PackagePath>
-      <Modified>2017-06-04T21:27:54.110</Modified>
+      <Modified>2017-06-05T11:23:41.779</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -615,11 +615,11 @@
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-04T21:33:30.529</Modified>
+      <Modified>2017-06-13T09:18:24.875</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Tim23-Anonimusi\Projekat\Projekat\bin\x86\Debug\Core\Projekat.exe">
       <PackagePath>Projekat.exe</PackagePath>
-      <Modified>2017-06-04T21:33:31.313</Modified>
+      <Modified>2017-06-13T09:18:26.063</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

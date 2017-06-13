@@ -43,7 +43,7 @@ namespace Projekat
                 DefaultVrijednostiKino.Initialize(db);
                 DefaultVrijednostiFilm.Initialize(db);
                 DefaultVrijednostiProjekcija.Initialize(db);
-               // DefaultVrijednostiUposleni.Initialize(db);
+                DefaultVrijednostiUposleni.Initialize(db);
             }
             
            

@@ -17,7 +17,7 @@
         <Image HorizontalAlignment="Left" Height="100" Margin="60,10,0,0" VerticalAlignment="Top" Width="235" Stretch="Fill" Source="Assets/logo.jpg">
 
         </Image>
-        <RelativePanel HorizontalAlignment="Left" BorderBrush ="#FF06082C" Height="169" Margin="10,115,0,0" VerticalAlignment="Top" Width="335" BorderThickness="2,2,2,2" Padding="2,2,2,2">
+        <RelativePanel x:ConnectionId='2' x:Name="prvi" HorizontalAlignment="Left" BorderBrush ="#FF06082C" Height="169" Margin="10,115,0,0" VerticalAlignment="Top" Width="335" BorderThickness="2,2,2,2" Padding="2,2,2,2">
 
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Hvala Vam što ste izvršili transakciju veću od 30 KM! Da li ste zainteresovani da postanete naš član i pri tom imate popust od 10% na sve projekcije? \nOdaberite jednu od opcija ispod:" VerticalAlignment="Top" Margin="10,10,0,0" FontSize="14" FontStyle="Italic" FontFamily="Script MT Bold" Foreground="#FFCF3103"/>
             <RadioButton Content="DA, želim postati član" HorizontalAlignment="Left" Height="32" Margin="80,90,0,0" VerticalAlignment="Top" Width="180" FontStyle="Italic" FontFamily="Script MT Bold" Foreground="#FFCF3103"/>
@@ -26,7 +26,7 @@
         </RelativePanel>
         <Button Content="Nazad" HorizontalAlignment="Left" Margin="20,590,0,0" VerticalAlignment="Top" Width="140" Height="30"/>
         <Button Content="Plati" HorizontalAlignment="Left" Margin="190,590,0,0" VerticalAlignment="Top" Width="140" Height="30"/>
-        <RelativePanel HorizontalAlignment="Left" BorderBrush ="#FF06082C" BorderThickness="2,2,2,2" Height="169" Margin="10,280,0,0" VerticalAlignment="Top" Width="335">
+        <RelativePanel x:ConnectionId='3' x:Name="drugi" HorizontalAlignment="Left" BorderBrush ="#FF06082C" BorderThickness="2,2,2,2" Height="169" Margin="10,280,0,0" VerticalAlignment="Top" Width="335">
             <TextBlock HorizontalAlignment="Left" Foreground="#FFCF3103" FontSize ="12" Height="20" TextWrapping="Wrap" Text="Ime: " VerticalAlignment="Top" Width="40" Margin="10,30,0,-190"/>
             <TextBlock HorizontalAlignment="Left" Foreground="#FFCF3103" Height="20" FontSize ="12" TextWrapping="Wrap" Text="Prezime:" VerticalAlignment="Top" Width="70" Margin="10,51,0,-190"/>
             <TextBlock HorizontalAlignment="Left" Foreground="#FFCF3103" Height="20" FontSize ="12" TextWrapping="Wrap" Text="Matični broj:" VerticalAlignment="Top" Width="90" Margin="10,72,0,-190"/>
@@ -34,14 +34,14 @@
             <TextBlock HorizontalAlignment="Left" Foreground="#FFCF3103" Height="20" FontSize ="12" TextWrapping="Wrap" Text="Grad:" VerticalAlignment="Top" Width="90" Margin="10,93,0,-190"/>
             <Button Content="Učitaj sliku" HorizontalAlignment="Left" FontSize="12" FontStyle="Normal" Padding="3,0,0,0" Foreground="#FFCF3103" Background="White" Height="20" VerticalAlignment="Top" Width="100" Margin="215,130,0,-190"/>
             <Button Content="Gotovo" HorizontalAlignment="Left" FontSize="12" FontStyle="Normal" Padding="3,0,0,0" Foreground="#FFCF3103" Background="White" Height="20" VerticalAlignment="Top" Width="100" Margin="20,130,0,-190"/>
-            <TextBox HorizontalAlignment="Left" MinHeight="20" Padding="10,0,0,0" FontSize ="12" Height="20" TextWrapping="Wrap" Text="Neko" VerticalAlignment="Top" Width="90" Margin="90,30,0,-46"/>
-            <TextBox HorizontalAlignment="Left" MinHeight="20" Padding="10,0,0,0" Height="20" FontSize ="12" TextWrapping="Wrap" Text="Nekić" VerticalAlignment="Top" Width="90" Margin="90,51,0,-190"/>
-            <TextBox HorizontalAlignment="Left" MinHeight="20" Padding="10,0,0,0" Height="20" FontSize ="12" TextWrapping="Wrap" Text="1702996785412" VerticalAlignment="Top" Width="90" Margin="90,72,0,-190"/>
-            <ComboBox HorizontalAlignment="Left" MinHeight="20" Padding="10,0,0,0" Height="20" VerticalAlignment="Top"  Width="90" Margin="90,93,0,-190">
+            <TextBox x:ConnectionId='4' HorizontalAlignment="Left" MinHeight="20" Padding="10,0,0,0" FontSize ="12" Height="20" x:Name="ime" TextWrapping="Wrap" PlaceholderText="Neko" VerticalAlignment="Top" Width="90" Margin="90,30,0,-46"/>
+            <TextBox x:ConnectionId='5' HorizontalAlignment="Left" MinHeight="20" Padding="10,0,0,0" Height="20" FontSize ="12" TextWrapping="Wrap" x:Name="prezime" PlaceholderText="Nekić" VerticalAlignment="Top" Width="90" Margin="90,51,0,-190"/>
+            <TextBox x:ConnectionId='6' HorizontalAlignment="Left" MinHeight="20" Padding="10,0,0,0" Height="20" FontSize ="12" TextWrapping="Wrap" x:Name="maticniBroj" PlaceholderText="1702996785412" VerticalAlignment="Top" Width="90" Margin="90,72,0,-190"/>
+            <ComboBox x:ConnectionId='7' HorizontalAlignment="Left" MinHeight="20" Padding="10,0,0,0" Height="20" VerticalAlignment="Top" x:Name="grad"  Width="90" Margin="90,93,0,-190">
 
             </ComboBox>
 
-            <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="205,25,-10,-10" Source="Assets/spongi.png"/>
+            <Image x:ConnectionId='8' x:Name="slika" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="205,25,-10,-10" Source="Assets/spongi.png"/>
 
         </RelativePanel>
         <RelativePanel HorizontalAlignment="Left" BorderBrush ="#FF06082C" BorderThickness="2,2,2,2" Height="120" Margin="10,448,0,0" VerticalAlignment="Top" Width="335">
